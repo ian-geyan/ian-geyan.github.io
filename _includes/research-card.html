@@ -1,0 +1,17 @@
+<li class="card research-card">
+  <div class="card__header">
+    <h3 class="card__title">{{ include.research.title }}</h3>
+    <span class="card__period">{{ include.research.period }}</span>
+  </div>
+  <p class="card__description">{{ include.research.description }}</p>
+  {% if include.research.tags.size > 0 %}
+  <ul class="tag-list">
+    {% for tag in include.research.tags %}<li class="tag">{{ tag }}</li>{% endfor %}
+  </ul>
+  {% endif %}
+  <p class="card__links">
+    {% if include.research.links.repo and include.research.links.repo != "" %}<a href="{{ include.research.links.repo }}">Repo</a>{% endif %}
+    {% if include.research.links.demo and include.research.links.demo != "" %}<a href="{{ include.research.links.demo }}">Demo</a>{% endif %}
+    {% if include.research.links.paper and include.research.links.paper != "" %}<a href="{{ include.research.links.paper }}">Paper</a>{% endif %}
+  </p>
+</li>

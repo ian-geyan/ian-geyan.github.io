@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About
+subtitle: The story behind the CV.
 permalink: /about/
 ---
 

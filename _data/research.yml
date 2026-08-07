@@ -1,0 +1,35 @@
+# Add one entry per research project/direction. featured: true shows it on the home page.
+
+- title: "Research Project One"
+  period: "2025 – present"
+  description: >-
+    One or two sentences on what this research project is, the question it's
+    trying to answer, and your role in it.
+  tags: ["Python", "PyTorch", "Distributed Systems"]
+  featured: true
+  links:
+    repo: "https://github.com/your-github-username/project-one"
+    demo: ""
+    paper: ""
+
+- title: "Research Project Two"
+  period: "2024"
+  description: >-
+    Short description of the project and the outcome or impact it had.
+  tags: ["TypeScript", "React", "Node.js"]
+  featured: true
+  links:
+    repo: "https://github.com/your-github-username/project-two"
+    demo: ""
+    paper: ""
+
+- title: "Research Project Three"
+  period: "2023"
+  description: >-
+    Short description of an earlier project worth keeping visible.
+  tags: ["Data Engineering", "SQL"]
+  featured: false
+  links:
+    repo: "https://github.com/your-github-username/project-three"
+    demo: ""
+    paper: ""

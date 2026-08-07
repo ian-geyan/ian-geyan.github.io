@@ -3,53 +3,64 @@
 # Restart `bundle exec jekyll serve` after changing this file.
 # ---------------------------------------------------------------------------
 
-title: "Jane Researcher"
-tagline: "PhD Candidate · Machine Learning & Systems"
-email: your-email@example.com
+title: "Ge Yan"
+tagline: "PhD Candidate"
+email: geyan@u.nus.edu
 description: >-
-  Personal site of Jane Researcher — research, publications, projects,
+  Personal site of Ge Yan — research, publications, teaching,
   and CV.
 baseurl: "" # subpath if not deploying to a root domain, e.g. "/my-repo"
 url: "" # e.g. "https://username.github.io" — set before deploying
 
 # Author / profile, shown on the home page and in the footer
 author:
-  name: "Jane Researcher"
-  role: "PhD Candidate, Department of Computer Science, XYZ University"
+  name: "Ge Yan"
+  role: "PhD Candidate, Electrical and Computer Engineering, National University of Singapore"
   avatar: "/assets/images/avatar.jpg" # replace with your own photo
   location: "Singapore"
   bio: >-
     I work on <strong>[your research area]</strong>. I'm interested in
     connecting the dots between rigorous research and things that ship.
     This site collects my publications, projects, and CV.
+  # Shown as tags in the home page sidebar under "Research Interests"
+  keywords:
+    - Wireless Communications
+    - Signal Processing
+    - Optimization
+    - Computational Electromagnetics
+    - Machine Learning
 
-# Social / contact links — leave a value blank ("") to hide that link
+# Social / contact links — leave a value blank ("") to hide that link.
+# github/linkedin/scholar/twitter accept either a bare username/ID or a
+# full profile URL (either works — pick whichever is easiest to copy/paste).
 social:
-  email: your-email@example.com
-  github: your-github-username
-  linkedin: your-linkedin-username
-  scholar: "" # Google Scholar profile ID
+  email: geyan@u.nus.edu
+  github: ian-geyan
+  linkedin: "https://linkedin.com/in/ge-yan-6817801a5"
+  scholar: "https://scholar.google.com/citations?user=pKFOqfcAAAAJ&hl=en"
   twitter: ""
-  orcid: "" # ORCID iD, e.g. 0000-0000-0000-0000
+  orcid: "0000-0002-5109-9958" # ORCID iD, e.g. 0000-0000-0000-0000
 
 # Nav bar, in order
 nav:
   - title: Home
     url: /
+  - title: Research
+    url: /research/
   - title: Publications
     url: /publications/
   - title: Projects
     url: /projects/
-  - title: CV
+  - title: Teaching
+    url: /teaching/
+  - title: CV / Resume
     url: /cv/
-  - title: Blog
-    url: /blog/
   - title: About
     url: /about/
 
 # How many "selected" items to feature on the home page
 home_publications_count: 3
-home_projects_count: 3
+home_research_count: 3
 home_news_count: 5
 
 # Build settings

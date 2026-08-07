@@ -1,0 +1,17 @@
+---
+layout: page
+title: Research
+subtitle: Ongoing projects and directions.
+permalink: /research/
+---
+
+{% assign research = site.data.research %}
+{% if research.size == 0 %}
+<p>No research entries yet — add entries to <code>_data/research.yml</code>.</p>
+{% endif %}
+
+<ul class="card-grid">
+  {% for item in research %}
+    {% include research-card.html research=item %}
+  {% endfor %}
+</ul>

@@ -1,0 +1,18 @@
+# Add one entry per course taught or assisted. Newest first is recommended.
+
+- role: "Teaching Assistant"
+  course: "CS 101: Introduction to Computer Science"
+  institution: "XYZ University"
+  term: "Fall 2025"
+  details:
+    - "Led weekly lab sections for ~30 students."
+    - "Held office hours and graded assignments."
+  link: ""
+
+- role: "Guest Lecturer"
+  course: "CS 501: Advanced Topics in [Your Area]"
+  institution: "XYZ University"
+  term: "Spring 2025"
+  details:
+    - "Delivered a lecture on [topic]."
+  link: ""

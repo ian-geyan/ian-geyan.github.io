@@ -1,0 +1,13 @@
+<div class="cv-entry">
+  <div class="cv-entry__main">
+    <h3>{{ include.item.course }}</h3>
+    <p class="cv-entry__org">{{ include.item.role }}, {{ include.item.institution }}</p>
+    {% if include.item.details %}
+    <ul class="cv-entry__details">
+      {% for d in include.item.details %}<li>{{ d }}</li>{% endfor %}
+    </ul>
+    {% endif %}
+    {% if include.item.link and include.item.link != "" %}<p class="card__links"><a href="{{ include.item.link }}">Course page</a></p>{% endif %}
+  </div>
+  <div class="cv-entry__period">{{ include.item.term }}</div>
+</div>

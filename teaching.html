@@ -1,0 +1,17 @@
+---
+layout: page
+title: Teaching
+subtitle: Courses taught and teaching assistantships.
+permalink: /teaching/
+---
+
+{% assign teaching = site.data.teaching %}
+{% if teaching.size == 0 %}
+<p>No teaching entries yet — add entries to <code>_data/teaching.yml</code>.</p>
+{% endif %}
+
+<div class="cv-block">
+  {% for item in teaching %}
+    {% include teaching-item.html item=item %}
+  {% endfor %}
+</div>

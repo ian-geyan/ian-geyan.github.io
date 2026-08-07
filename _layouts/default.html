@@ -3,7 +3,7 @@
   {% include head.html %}
   <body>
     {% include header.html %}
-    <main class="wrap main-content">
+    <main class="wrap main-content{% if page.layout == "home" %} wrap--home{% endif %}">
       {{ content }}
     </main>
     {% include footer.html %}
