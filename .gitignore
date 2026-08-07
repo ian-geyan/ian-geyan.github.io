@@ -3,3 +3,9 @@ _site
 .jekyll-cache
 .jekyll-metadata
 vendor
+
+# Not committed: the one in this repo was generated on Windows and locked
+# to that platform only, which broke the Linux-based GitHub Actions build
+# (bundler in CI mode won't reconcile a mismatched/wrong-platform lockfile).
+# Let each environment (local machine, CI) generate its own.
+Gemfile.lock

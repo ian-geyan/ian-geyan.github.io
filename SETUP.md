@@ -73,10 +73,13 @@ _posts/                Blog posts (existing Jekyll convention, unchanged).
    `assets/files/cv.pdf` (linked from the "Download PDF" button on `/cv/`).
 5. **Preview locally**: `bundle install` then `bundle exec jekyll serve`,
    open `http://localhost:4000`.
-   - Note: `Gemfile.lock` was generated against the original `minima`
-     theme setup and is now stale (this template dropped `minima` and
-     added `jekyll-seo-tag` / `jekyll-sitemap`). The first `bundle install`
-     after this change will update the lockfile — that's expected.
+   - Note: `Gemfile.lock` is gitignored, not committed. It's
+     platform-specific (contains native-extension gems compiled for your
+     OS), so each machine — your laptop, GitHub Actions' Linux runner —
+     generates its own on first `bundle install`. A Windows-generated
+     lockfile was committed early on and broke the Actions build (Bundler
+     in CI mode refuses to install on a platform the lockfile doesn't
+     list); removing it from git fixed that.
 
 ## Notes on decisions made
 
