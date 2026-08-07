@@ -1,0 +1,51 @@
+# Add one entry per publication. Newest first is recommended but not required —
+# the publications page groups and sorts by `year` automatically.
+#
+# type: journal | conference | workshop | preprint
+# featured: true shows it in the "Selected Publications" list on the home page
+
+- title: "A Scalable Method for Doing the Thing"
+  authors: "**Jane Researcher**, Alex Collaborator, and Sam Advisor"
+  venue: "Conference on Interesting Systems (CIS)"
+  year: 2026
+  type: conference
+  featured: true
+  abstract: >-
+    One or two sentences summarizing the contribution and result of this
+    paper — replace with your actual abstract.
+  links:
+    pdf: ""
+    doi: ""
+    code: "https://github.com/your-github-username/example-repo"
+    slides: ""
+    video: ""
+
+- title: "Understanding Why the Other Thing Happens"
+  authors: "**Jane Researcher** and Sam Advisor"
+  venue: "Journal of Important Findings"
+  year: 2025
+  type: journal
+  featured: true
+  abstract: >-
+    Replace with your actual abstract summarizing the paper's contribution.
+  links:
+    pdf: ""
+    doi: ""
+    code: ""
+    slides: ""
+    video: ""
+
+- title: "Early Results on a Promising Direction"
+  authors: "**Jane Researcher**, Alex Collaborator"
+  venue: "Workshop on Emerging Ideas, CIS"
+  year: 2024
+  type: workshop
+  featured: false
+  abstract: >-
+    Replace with your actual abstract.
+  links:
+    pdf: ""
+    doi: ""
+    code: ""
+    slides: ""
+    video: ""

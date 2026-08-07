@@ -1,0 +1,16 @@
+---
+layout: page
+title: Projects
+permalink: /projects/
+---
+
+{% assign projects = site.data.projects %}
+{% if projects.size == 0 %}
+<p>No projects yet — add entries to <code>_data/projects.yml</code>.</p>
+{% endif %}
+
+<ul class="card-grid">
+  {% for project in projects %}
+    {% include project-card.html project=project %}
+  {% endfor %}
+</ul>

@@ -1,0 +1,70 @@
+---
+layout: page
+title: CV
+permalink: /cv/
+---
+
+<p class="cv-download">
+  <a class="btn btn--primary" href="{{ "/assets/files/cv.pdf" | relative_url }}">Download PDF</a>
+  <!-- Add your PDF at assets/files/cv.pdf -->
+</p>
+
+<section class="cv-block">
+  <h2 class="section__title">Education</h2>
+  {% for item in site.data.cv.education %}
+  <div class="cv-entry">
+    <div class="cv-entry__main">
+      <h3>{{ item.degree }}</h3>
+      <p class="cv-entry__org">{{ item.institution }}</p>
+      {% if item.details %}<p>{{ item.details }}</p>{% endif %}
+    </div>
+    <div class="cv-entry__period">{{ item.period }}</div>
+  </div>
+  {% endfor %}
+</section>
+
+<section class="cv-block">
+  <h2 class="section__title">Experience</h2>
+  {% for item in site.data.cv.experience %}
+  <div class="cv-entry">
+    <div class="cv-entry__main">
+      <h3>{{ item.role }}</h3>
+      <p class="cv-entry__org">{{ item.org }}</p>
+      {% if item.details %}
+      <ul class="cv-entry__details">
+        {% for d in item.details %}<li>{{ d }}</li>{% endfor %}
+      </ul>
+      {% endif %}
+    </div>
+    <div class="cv-entry__period">{{ item.period }}</div>
+  </div>
+  {% endfor %}
+</section>
+
+<section class="cv-block">
+  <h2 class="section__title">Skills</h2>
+  <div class="skills-grid">
+    {% for group in site.data.cv.skills %}
+    <div class="skills-row">
+      <span class="skills-row__label">{{ group.category }}</span>
+      <ul class="tag-list">
+        {% for item in group.items %}<li class="tag">{{ item }}</li>{% endfor %}
+      </ul>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+{% if site.data.cv.awards.size > 0 %}
+<section class="cv-block">
+  <h2 class="section__title">Awards</h2>
+  <ul class="news-list">
+    {% for award in site.data.cv.awards %}
+    <li class="news-item">
+      <time>{{ award.year }}</time>
+      <span>{{ award.title }}</span>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}

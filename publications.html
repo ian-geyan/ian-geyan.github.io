@@ -1,0 +1,31 @@
+---
+layout: page
+title: Publications
+permalink: /publications/
+---
+
+{% assign pubs = site.data.publications | sort: "year" | reverse %}
+{% assign types = pubs | map: "type" | uniq %}
+
+<div class="pub-filters">
+  <button data-pub-filter="all" class="active">All</button>
+  {% for t in types %}
+  <button data-pub-filter="{{ t }}">{{ t | capitalize }}</button>
+  {% endfor %}
+</div>
+
+{% if pubs.size == 0 %}
+<p>No publications yet — add entries to <code>_data/publications.yml</code>.</p>
+{% endif %}
+
+{% assign current_year = "" %}
+{% for pub in pubs %}
+  {% if pub.year != current_year %}
+    {% unless forloop.first %}</ul>{% endunless %}
+    {% assign current_year = pub.year %}
+    <h3 class="pub-year-heading" data-pub-year-heading="{{ pub.year }}">{{ pub.year }}</h3>
+    <ul class="pub-list">
+  {% endif %}
+  {% include publication-item.html pub=pub %}
+  {% if forloop.last %}</ul>{% endif %}
+{% endfor %}

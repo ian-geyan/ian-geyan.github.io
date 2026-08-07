@@ -1,0 +1,17 @@
+<li class="card project-card">
+  <div class="card__header">
+    <h3 class="card__title">{{ include.project.title }}</h3>
+    <span class="card__period">{{ include.project.period }}</span>
+  </div>
+  <p class="card__description">{{ include.project.description }}</p>
+  {% if include.project.tags.size > 0 %}
+  <ul class="tag-list">
+    {% for tag in include.project.tags %}<li class="tag">{{ tag }}</li>{% endfor %}
+  </ul>
+  {% endif %}
+  <p class="card__links">
+    {% if include.project.links.repo and include.project.links.repo != "" %}<a href="{{ include.project.links.repo }}">Repo</a>{% endif %}
+    {% if include.project.links.demo and include.project.links.demo != "" %}<a href="{{ include.project.links.demo }}">Demo</a>{% endif %}
+    {% if include.project.links.paper and include.project.links.paper != "" %}<a href="{{ include.project.links.paper }}">Paper</a>{% endif %}
+  </p>
+</li>

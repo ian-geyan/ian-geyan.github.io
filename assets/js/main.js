@@ -1,0 +1,46 @@
+(function () {
+  var themeToggle = document.getElementById("theme-toggle");
+  if (themeToggle) {
+    themeToggle.addEventListener("click", function () {
+      var current = document.documentElement.getAttribute("data-theme");
+      var next = current === "dark" ? "light" : "dark";
+      document.documentElement.setAttribute("data-theme", next);
+      localStorage.setItem("theme", next);
+    });
+  }
+
+  var navToggle = document.getElementById("nav-toggle");
+  var siteNav = document.getElementById("site-nav");
+  if (navToggle && siteNav) {
+    navToggle.addEventListener("click", function () {
+      var isOpen = siteNav.classList.toggle("open");
+      navToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    });
+  }
+
+  var filterButtons = document.querySelectorAll("[data-pub-filter]");
+  var pubItems = document.querySelectorAll("[data-pub-type]");
+  if (filterButtons.length && pubItems.length) {
+    filterButtons.forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        filterButtons.forEach(function (b) { b.classList.remove("active"); });
+        btn.classList.add("active");
+        var filter = btn.getAttribute("data-pub-filter");
+        pubItems.forEach(function (item) {
+          var show = filter === "all" || item.getAttribute("data-pub-type") === filter;
+          item.style.display = show ? "" : "none";
+        });
+        document.querySelectorAll("[data-pub-year-heading]").forEach(function (heading) {
+          var year = heading.getAttribute("data-pub-year-heading");
+          var visible = document.querySelectorAll(
+            '[data-pub-type][data-pub-year="' + year + '"]'
+          );
+          var anyVisible = Array.prototype.some.call(visible, function (el) {
+            return el.style.display !== "none";
+          });
+          heading.style.display = anyVisible ? "" : "none";
+        });
+      });
+    });
+  }
+})();

@@ -1,0 +1,16 @@
+<li class="pub" data-pub-type="{{ include.pub.type }}" data-pub-year="{{ include.pub.year }}">
+  <span class="pub__type pub__type--{{ include.pub.type }}">{{ include.pub.type }}</span>
+  <div class="pub__body">
+    <h3 class="pub__title">{{ include.pub.title }}</h3>
+    <p class="pub__authors">{{ include.pub.authors | markdownify | replace: '<p>', '' | replace: '</p>', '' }}</p>
+    <p class="pub__venue">{{ include.pub.venue }}, {{ include.pub.year }}</p>
+    {% if include.pub.abstract %}<p class="pub__abstract">{{ include.pub.abstract }}</p>{% endif %}
+    <p class="pub__links">
+      {% if include.pub.links.pdf and include.pub.links.pdf != "" %}<a href="{{ include.pub.links.pdf }}">PDF</a>{% endif %}
+      {% if include.pub.links.doi and include.pub.links.doi != "" %}<a href="{{ include.pub.links.doi }}">DOI</a>{% endif %}
+      {% if include.pub.links.code and include.pub.links.code != "" %}<a href="{{ include.pub.links.code }}">Code</a>{% endif %}
+      {% if include.pub.links.slides and include.pub.links.slides != "" %}<a href="{{ include.pub.links.slides }}">Slides</a>{% endif %}
+      {% if include.pub.links.video and include.pub.links.video != "" %}<a href="{{ include.pub.links.video }}">Video</a>{% endif %}
+    </p>
+  </div>
+</li>

@@ -1,0 +1,14 @@
+<footer class="site-footer">
+  <div class="wrap site-footer__inner">
+    <div class="site-footer__links">
+      {% if site.social.email %}<a href="mailto:{{ site.social.email }}" aria-label="Email">Email</a>{% endif %}
+      {% if site.social.github %}<a href="https://github.com/{{ site.social.github }}" aria-label="GitHub">GitHub</a>{% endif %}
+      {% if site.social.linkedin %}<a href="https://www.linkedin.com/in/{{ site.social.linkedin }}" aria-label="LinkedIn">LinkedIn</a>{% endif %}
+      {% if site.social.scholar %}<a href="https://scholar.google.com/citations?user={{ site.social.scholar }}" aria-label="Google Scholar">Google Scholar</a>{% endif %}
+      {% if site.social.orcid %}<a href="https://orcid.org/{{ site.social.orcid }}" aria-label="ORCID">ORCID</a>{% endif %}
+      {% if site.social.twitter %}<a href="https://twitter.com/{{ site.social.twitter }}" aria-label="Twitter">Twitter</a>{% endif %}
+      <a href="{{ "/feed.xml" | relative_url }}" aria-label="RSS feed">RSS</a>
+    </div>
+    <p class="site-footer__copy">&copy; {{ site.time | date: "%Y" }} {{ site.title }}. Built with Jekyll.</p>
+  </div>
+</footer>

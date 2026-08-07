@@ -1,0 +1,45 @@
+# Structured CV content, rendered on the /cv/ page.
+# This is shown alongside (or instead of) a downloadable PDF —
+# put your PDF at assets/files/cv.pdf and it will be linked automatically.
+
+education:
+  - degree: "Ph.D. in Computer Science"
+    institution: "XYZ University"
+    period: "2025 – present"
+    details: "Advisor: Prof. Sam Advisor. Research area: [your area]."
+  - degree: "M.Sc. in Computer Science"
+    institution: "ABC University"
+    period: "2023 – 2025"
+    details: "Thesis: \"Title of your thesis.\""
+  - degree: "B.Sc. in Computer Science"
+    institution: "ABC University"
+    period: "2019 – 2023"
+    details: "Graduated with honors."
+
+experience:
+  - role: "Research Assistant"
+    org: "XYZ University"
+    period: "2025 – present"
+    details:
+      - "Working on [research topic] under Prof. Sam Advisor."
+      - "Published N papers in top-tier venues (see Publications)."
+  - role: "Software Engineer Intern"
+    org: "Some Tech Company"
+    period: "Summer 2024"
+    details:
+      - "Built and shipped a feature used by N users."
+      - "Improved system X, reducing latency/cost by N%."
+
+skills:
+  - category: "Programming"
+    items: ["Python", "TypeScript", "C++", "SQL"]
+  - category: "ML / Data"
+    items: ["PyTorch", "scikit-learn", "Pandas"]
+  - category: "Tools"
+    items: ["Git", "Docker", "Linux"]
+
+awards:
+  - title: "Best Paper Award, Workshop on Emerging Ideas"
+    year: 2024
+  - title: "Graduate Fellowship, XYZ University"
+    year: 2025

@@ -4,15 +4,22 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+I'm **{{ site.author.name }}**, {{ site.author.role | downcase }}, based in {{ site.author.location }}.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+## Research interests
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+Replace this section with a couple of paragraphs on what you work on, why it
+matters, and what questions you're currently chasing. This is the place to
+go deeper than the one-line bio on the home page — academic readers will
+look here for research framing, industry readers will look here for the
+"what problem do you actually solve" version.
 
+## Background
 
-[jekyll-organization]: https://github.com/jekyll
+A short paragraph on your path here — degrees, prior roles, what led you to
+this research area. Link out to your [CV](/cv/) for the full timeline.
+
+## Outside of research
+
+Optional: a line or two of personal interest that makes you memorable —
+teaching, open source, mentoring, hobbies.
