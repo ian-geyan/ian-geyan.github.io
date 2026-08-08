@@ -1,6 +1,8 @@
 <li class="pub" data-pub-type="{{ include.pub.type }}" data-pub-year="{{ include.pub.year }}">
   <span class="pub__type pub__type--{{ include.pub.type }}">{{ include.pub.type }}</span>
+  {% if site.publications_show_images %}
   <div class="pub__thumb">{% if include.pub.image and include.pub.image != "" %}<img src="{{ include.pub.image | relative_url }}" alt="" loading="lazy">{% endif %}</div>
+  {% endif %}
   <div class="pub__body">
     <h3 class="pub__title">{{ include.pub.title }}</h3>
     <p class="pub__authors">{{ include.pub.authors | markdownify | replace: '<p>', '' | replace: '</p>', '' }}</p>

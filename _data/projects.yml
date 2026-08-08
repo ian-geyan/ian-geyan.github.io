@@ -1,25 +1,27 @@
 # Add one entry per project (software, tools, side projects — things you
 # built, as opposed to /research/ which is your research work/directions).
 
-- title: "Project One"
-  period: "2025 – present"
-  description: >-
-    One or two sentences on what this project is, what problem it solves,
-    and your role in it.
-  tags: ["Python", "PyTorch", "Distributed Systems"]
+- title: "Prototyping for Movable Antenna-Aided Wireless Communications"
+  period: "Dec. 2024 - Sep. 2025"
+  description:
+    - "Designed and conducted experiments for MA-aided wireless communications and validated theoretical system performance under practical conditions."
+    - "Led algorithm integration, system debugging, and performance evaluation."
+    - "Developed a prototype based on National Instrument software-defined radio platforms."
+  tags: ["Python", "Software-Defined Radio", "Movable Antenna"]
   featured: true
   links:
-    repo: "https://github.com/your-github-username/project-one"
+    repo: ""
     demo: ""
     paper: ""
 
-- title: "Project Two"
-  period: "2024"
-  description: >-
-    Short description of the project and the outcome or impact it had.
-  tags: ["TypeScript", "React", "Node.js"]
+- title: "Practical Channel Acquisition and Optimization for IRS Prototypes"
+  period: "May 2024 - Oct. 2024"
+  description:
+    - "Collaborated with a remote implementation team to integrate optimization algorithms from my paper into a prototype wireless platform."
+    - "Provided algorithm support, assisted with debugging, and contributed to performance analysis during system validation."
+  tags: ["Python", "MATLAB", "Intelligent Reflecting Surface (IRS)"]
   featured: true
   links:
-    repo: "https://github.com/your-github-username/project-two"
+    repo: ""
     demo: ""
     paper: ""

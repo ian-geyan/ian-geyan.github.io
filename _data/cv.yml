@@ -3,43 +3,46 @@
 # put your PDF at assets/files/cv.pdf and it will be linked automatically.
 
 education:
-  - degree: "Ph.D. in Computer Science"
-    institution: "XYZ University"
-    period: "2025 – present"
-    details: "Advisor: Prof. Sam Advisor. Research area: [your area]."
-  - degree: "M.Sc. in Computer Science"
-    institution: "ABC University"
-    period: "2023 – 2025"
-    details: "Thesis: \"Title of your thesis.\""
-  - degree: "B.Sc. in Computer Science"
-    institution: "ABC University"
-    period: "2019 – 2023"
-    details: "Graduated with honors."
+  - degree: "Ph.D. in Electrical and Computer Engineering"
+    institution: "National University of Singapore, Singapore"
+    period: "Aug. 2022 - Oct. 2026 (expected)"
+    details: "Advisors: Prof. Rui Zhang and Prof. Xudong Chen. Thesis: \"Reconfigurable MIMO for Wireless Communication: Optimization and Practical Channel Knowledge Acquisition.\""
+
+  - degree: "M.Sc. in Electrical and Computer Engineering"
+    institution: "National University of Singapore, Singapore"
+    period: "Jan. 2021 - Jun. 2022"
+    details: "GPA: 4.75/5.00. "
+
+  - degree: "B.Sc. in Information Science and Engineering"
+    institution: "Southeast University, Nanjing, China"
+    period: "Aug. 2016 - Jun. 2020"
+    details: "Graduated with honors. GPA: 3.89/4.00. "
+
 
 experience:
-  - role: "Research Assistant"
-    org: "XYZ University"
-    period: "2025 – present"
+  - role: "AI Research Intern"
+    org: "SenseTime, Shanghai, China"
+    period: "Aug. 2020 - Dec. 2020"
     details:
-      - "Working on [research topic] under Prof. Sam Advisor."
-      - "Published N papers in top-tier venues (see Publications)."
-  - role: "Software Engineer Intern"
-    org: "Some Tech Company"
-    period: "Summer 2024"
-    details:
-      - "Built and shipped a feature used by N users."
-      - "Improved system X, reducing latency/cost by N%."
+      - "Participated in image recognition and segmentation projects."
+      - "Investigated GAN-based video generation."
+
 
 skills:
   - category: "Programming"
-    items: ["Python", "TypeScript", "C++", "SQL"]
+    items: ["Python", "MATLAB", "C++"]
   - category: "ML / Data"
-    items: ["PyTorch", "scikit-learn", "Pandas"]
+    items: ["PyTorch", "tensorflow"]
   - category: "Tools"
-    items: ["Git", "Docker", "Linux"]
+    items: ["Git", "Docker", "Linux", "COMSOL", "CST", "CVX", "Gurobi"]
+
 
 awards:
-  - title: "Best Paper Award, Workshop on Emerging Ideas"
-    year: 2024
-  - title: "Graduate Fellowship, XYZ University"
-    year: 2025
+  - title: "President's Graduate Fellowship, National University of Singapore, Singapore"
+    year: Aug. 2022
+
+  - title: "National Scholarship (1%), Chinese Ministry of Education"
+    year: Oct. 2018
+
+  - title: "President Scholarship (1%), Southeast University, Nanjing, China"
+    year: Oct. 2017

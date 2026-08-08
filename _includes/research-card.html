@@ -3,7 +3,11 @@
     <h3 class="card__title">{{ include.research.title }}</h3>
     <span class="card__period">{{ include.research.period }}</span>
   </div>
-  <p class="card__description">{{ include.research.description }}</p>
+  {% if include.research.description.size > 0 %}
+  <ul class="card__description-list">
+    {% for point in include.research.description %}<li>{{ point }}</li>{% endfor %}
+  </ul>
+  {% endif %}
   {% if include.research.tags.size > 0 %}
   <ul class="tag-list">
     {% for tag in include.research.tags %}<li class="tag">{{ tag }}</li>{% endfor %}

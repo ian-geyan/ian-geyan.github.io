@@ -59,6 +59,7 @@ times as you want without anything changing on the public site.
 | Your photo                                      | replace `assets/images/avatar.jpg` (upload a file of the same name) |
 | Your CV as a downloadable PDF                   | replace `assets/files/cv.pdf` |
 | The order of tabs in the top nav                | `_config.yml`, the `nav:` list |
+| Whether publication thumbnails show at all       | `_config.yml`, `publications_show_images: true`/`false` — set to `false` to hide the image column on every publication and go back to the plain text-only list |
 
 ## How the data files work (YAML basics)
 

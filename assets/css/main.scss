@@ -396,7 +396,13 @@ h1, h2, h3, h4 {
 }
 .card__title { margin: 0; font-size: 1.05rem; }
 .card__period { font-size: 0.78rem; color: var(--text-muted); white-space: nowrap; }
-.card__description { font-size: 0.92rem; color: var(--text-muted); margin: 8px 0; }
+.card__description-list {
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  margin: 8px 0;
+  padding-left: 18px;
+}
+.card__description-list li { margin: 2px 0; }
 .card__links { display: flex; gap: 12px; font-size: 0.88rem; font-weight: 600; margin: 8px 0 0; }
 
 /* ---------------------------------------------------------------------

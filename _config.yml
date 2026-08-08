@@ -63,6 +63,11 @@ home_publications_count: 3
 home_research_count: 3
 home_news_count: 5
 
+# Show each publication's thumbnail (the `image:` field in
+# _data/publications.yml). Set to false to hide the image column entirely
+# and go back to the plain text-only publication list.
+publications_show_images: false
+
 # Build settings
 permalink: /blog/:year/:month/:day/:title/
 

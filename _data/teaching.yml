@@ -1,18 +1,94 @@
 # Add one entry per course taught or assisted. Newest first is recommended.
 
+# 2026
 - role: "Teaching Assistant"
-  course: "CS 101: Introduction to Computer Science"
-  institution: "XYZ University"
-  term: "Fall 2025"
+  course: "EE5131/6131: Wireless Communications (Advanced)"
+  institution: "National University of Singapore, Singapore"
+  term: "Spring 2026"
   details:
-    - "Led weekly lab sections for ~30 students."
+    - "Prepared and revised lecture notes and tutorials."
     - "Held office hours and graded assignments."
   link: ""
 
-- role: "Guest Lecturer"
-  course: "CS 501: Advanced Topics in [Your Area]"
-  institution: "XYZ University"
-  term: "Spring 2025"
+- role: "Teaching Assistant"
+  course: "EE3131C: Communication Systems"
+  institution: "National University of Singapore, Singapore"
+  term: "Spring 2026"
   details:
-    - "Delivered a lecture on [topic]."
+    - "Prepared and revised lecture notes and tutorials."
+    - "Held office hours and graded assignments."
   link: ""
+
+
+# 2025
+
+- role: "Teaching Assistant"
+  course: "CEG5102: Wireless Communications"
+  institution: "National University of Singapore, Singapore"
+  term: "Fall 2025"
+  details:
+    - "Prepared and revised lecture notes and tutorials."
+    - "Held office hours and graded assignments."
+  link: ""
+
+
+# 2024
+
+- role: "Teaching Assistant"
+  course: "EE4032: Blockchain Engineering"
+  institution: "National University of Singapore, Singapore"
+  term: "Fall 2024"
+  details:
+    - "Prepared and held tutorials for the project assignment."
+    - "Held office hours and graded assignments."
+  link: ""
+
+- role: "Teaching Assistant"
+  course: "CEG5103: Wireless and Sensor Networks for IoT"
+  institution: "National University of Singapore, Singapore"
+  term: "Spring 2024"
+  details:
+    - "Held office hours and graded assignments."
+  link: ""
+
+
+# 2023
+
+- role: "Teaching Assistant"
+  course: "EE5139: Information Theory and Its Applications"
+  institution: "National University of Singapore, Singapore"
+  term: "Fall 2023"
+  details:
+    - "Prepare and revise lecture notes and tutorials."
+    - "Held office hours and graded assignments."
+  link: ""
+
+- role: "Teaching Assistant"
+  course: "EE4032: Blockchain Engineering"
+  institution: "National University of Singapore, Singapore"
+  term: "Fall 2023"
+  details:
+    - "Prepared and held tutorials for the project assignment."
+    - "Held office hours and graded assignments."
+  link: ""
+
+- role: "Teaching Assistant"
+  course: "CEG5103: Wireless and Sensor Networks for IoT"
+  institution: "National University of Singapore, Singapore"
+  term: "Spring 2023"
+  details:
+    - "Held office hours and graded assignments."
+  link: ""
+
+
+# 2019
+
+- role: "Teaching Assistant"
+  course: "Algorithm and Program Design"
+  institution: "Southest University, Nanjing, China"
+  term: "Fall 2019"
+  details:
+    - "Held tutorials and office hours and graded assignments."
+  link: ""
+
+

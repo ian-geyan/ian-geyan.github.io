@@ -3,7 +3,11 @@
     <h3 class="card__title">{{ include.project.title }}</h3>
     <span class="card__period">{{ include.project.period }}</span>
   </div>
-  <p class="card__description">{{ include.project.description }}</p>
+  {% if include.project.description.size > 0 %}
+  <ul class="card__description-list">
+    {% for point in include.project.description %}<li>{{ point }}</li>{% endfor %}
+  </ul>
+  {% endif %}
   {% if include.project.tags.size > 0 %}
   <ul class="tag-list">
     {% for tag in include.project.tags %}<li class="tag">{{ tag }}</li>{% endfor %}

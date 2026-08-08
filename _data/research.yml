@@ -1,35 +1,36 @@
 # Add one entry per research project/direction. featured: true shows it on the home page.
 
-- title: "Research Project One"
-  period: "2025 - present"
-  description: >-
-    One or two sentences on what this research project is, the question it's
-    trying to answer, and your role in it.
-  tags: ["Python", "PyTorch", "Distributed Systems"]
+- title: "Channel Knowledge Map (CKM) Modeling from An Electromagnetic Perspective"
+  period: "Apr. 2026 - present"
+  description:
+    - "Aims to develop a novel modeling and reconstruction approach for wireless channels based on computational electromagnetics instead of ray-tracing techniques, thereby realizing physically consistent CKM representation without clumsy geometrical parameters for the environment. "
+    - "Envisioned to reduce complexity and dimensionality of CKM modeling, facilitating both wireless communication and sensing for existing systems. "
+  tags: ["Channel Knowledge Map (CKM)", "Digital Twin", "Wireless Sensing", "Inverse Scattering"]
   featured: true
   links:
-    repo: "https://github.com/your-github-username/project-one"
+    repo: ""
     demo: ""
     paper: ""
 
-- title: "Research Project Two"
-  period: "2024"
-  description: >-
-    Short description of the project and the outcome or impact it had.
-  tags: ["TypeScript", "React", "Node.js"]
+- title: "Movable Antenna (MA)-Aided Wireless Communications Based on Long-Term Channel Statistics"
+  period: "Apr. 2024 - present"
+  description:
+    - "Established a novel optimization framework for MA-aided wireless communication systems based on long-term channel statistics, significantly reducing the overhead and facilitating practical deployment of MA-aided systems."
+    - "By exploiting the covariance structure of user channels, the proposed framework is able to statistically mitigate user channel correlations, thus improving communication performance over different timescales. "
+  tags: ["Movable Antenna", "Statistical Channel State Information", "Multiuser Communications"]
   featured: true
   links:
-    repo: "https://github.com/your-github-username/project-two"
+    repo: ""
     demo: ""
     paper: ""
 
-- title: "Research Project Three"
-  period: "2023"
-  description: >-
-    Short description of an earlier project worth keeping visible.
-  tags: ["Data Engineering", "SQL"]
+- title: "Practical Coverage Enhancement for Intelligent Reflecting Surface (IRS)-Assisted Wireless Systems"
+  period: "Oct. 2022 - Sep. 2025"
+  description:
+    - "Developed efficient and practical channel estimation and optimization algorithms for intelligent reflecting surface (IRS)-assisted wireless systems based on power measurements, enabling smoother integration of IRS and existing wireless systems. "
+  tags: ["Intelligent Reflecting Surfaces", "Coverage Enhancement", "Power Measurement"]
   featured: false
   links:
-    repo: "https://github.com/your-github-username/project-three"
+    repo: ""
     demo: ""
     paper: ""
