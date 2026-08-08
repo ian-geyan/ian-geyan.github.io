@@ -35,6 +35,12 @@ _data/
 _layouts/              default, home, page, post
 _includes/              head, header, footer, social-links, publication-item,
                        research-card, project-card, teaching-item
+_plugins/publication_rank.rb
+                       Computes a year+month sort rank (and month name) for
+                       each publication at build time — Liquid's `sort`
+                       filter only handles one field, so this lets
+                       publications.html/home.html rank newest-to-oldest
+                       within a year using both `year` and `month`.
 
 assets/css/main.scss   Hand-written CSS. Theming via CSS variables in :root
                        and :root[data-theme="dark"] — no framework/CDN.

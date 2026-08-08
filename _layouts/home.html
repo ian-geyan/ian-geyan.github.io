@@ -51,7 +51,7 @@ layout: default
     </section>
     {% endif %}
 
-    {% assign featured_pubs = site.data.publications | where: "featured", true | sort: "year" | reverse | slice: 0, site.home_publications_count %}
+    {% assign featured_pubs = site.data.publications | where: "featured", true | sort: "rank" | reverse | slice: 0, site.home_publications_count %}
     {% if featured_pubs.size > 0 %}
     <section class="section">
       <div class="section__header">

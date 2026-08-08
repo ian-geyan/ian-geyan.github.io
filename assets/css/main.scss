@@ -322,14 +322,26 @@ h1, h2, h3, h4 {
   color: var(--text-muted);
   padding-top: 3px;
 }
+.pub__thumb {
+  flex-shrink: 0;
+  width: 96px;
+  height: 72px;
+}
+.pub__thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+}
 .pub__title { margin: 0 0 4px; font-size: 1.05rem; }
 .pub__authors, .pub__venue { margin: 0 0 3px; font-size: 0.92rem; color: var(--text-muted); }
-.pub__abstract { margin: 8px 0 6px; font-size: 0.92rem; }
 .pub__links { margin: 4px 0 0; display: flex; gap: 14px; font-size: 0.88rem; font-weight: 600; }
 
 @media (max-width: 560px) {
   .pub { flex-direction: column; gap: 4px; }
   .pub__type { width: auto; }
+  .pub__thumb:empty { display: none; }
 }
 
 /* Publication filter bar (publications page) */

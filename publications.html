@@ -5,7 +5,7 @@ subtitle: Peer-reviewed papers, preprints, and talks.
 permalink: /publications/
 ---
 
-{% assign pubs = site.data.publications | sort: "year" | reverse %}
+{% assign pubs = site.data.publications | sort: "rank" | reverse %}
 {% assign types = pubs | map: "type" | uniq %}
 
 <div class="pub-filters">

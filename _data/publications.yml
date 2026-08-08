@@ -1,18 +1,27 @@
-# Add one entry per publication. Newest first is recommended but not required —
-# the publications page groups and sorts by `year` automatically.
+# Add one entry per publication. Order in this file doesn't matter —
+# the publications page groups by `year` and ranks newest-to-oldest
+# within each year automatically (using `year` + `month`).
 #
-# type: journal | conference | workshop | preprint
+# type: journal | magazine | conference
+# month: 1-12 (numeric). Leave as "" if unknown — it just sorts to the
+#   start of its year until you fill it in.
+# image: path to a thumbnail shown on the left of the entry, e.g.
+#   "/assets/images/publications/my-paper.png" (add the file under
+#   assets/images/publications/). Leave as "" to show no image — the
+#   entry's text still lines up with entries that do have one.
 # featured: true shows it in the "Selected Publications" list on the home page
+
+
+############ MA-related #########
 
 - title: "Slow Movable Antenna System Design Based on Cell-Specific Long-Term Angular Power Spectrum"
   authors: "**G. Yan**, L. Zhu, and R. Zhang"
   venue: "arxiv (submitted to IEEE Trans. Wireless Commun.)"
   year: 2026
+  month: 5 # inferred from arXiv ID 2605.12192 (YYMM) — check/adjust if needed
   type: journal
   featured: true
-  abstract: >-
-    One or two sentences summarizing the contribution and result of this
-    paper — replace with your actual abstract.
+  image: ""
   links:
     pdf: "https://arxiv.org/abs/2605.12192"
     doi: ""
@@ -23,29 +32,126 @@
 - title: "Movable Antenna Aided Multiuser Communications: Antenna Position Optimization Based on Statistical Channel Information"
   authors: "**G. Yan**, L. Zhu, and R. Zhang"
   venue: "IEEE Trans. Commun."
-  year: 2026
+  year: 2025
+  month: 11 # fill in (1-12)
   type: journal
   featured: true
-  abstract: >-
-    Replace with your actual abstract summarizing the paper's contribution.
+  image: ""
   links:
-    pdf: ""
-    doi: ""
+    pdf: "https://ieeexplore.ieee.org/abstract/document/11271298"
+    doi: "10.1109/TCOMM.2025.3638653"
     code: ""
     slides: ""
     video: ""
 
+
+- title: "Movable and reconfigurable antennas for 6G: Unlocking electromagnetic-domain design and optimization"
+  authors: "L. Zhu, H. Mao, **G. Yan**, W. Ma, Z. Xiao, and R. Zhang"
+  venue: "npj Wireless Technol."
+  year: 2026
+  month: 2 # fill in (1-12)
+  type: journal
+  featured: false
+  image: ""
+  links:
+    pdf: "https://www.nature.com/articles/s44459-025-00017-8"
+    doi: "10.1038/s44459-025-00017-8"
+    code: ""
+    slides: ""
+    video: ""
+  
+- title: "Antenna Position Optimization Based on Statistical Channel Information for Movable Antenna Aided Multiuser Communications"
+  authors: "**G. Yan**, and R. Zhang"
+  venue: "2025 IEEE Globecom Workshops (GC Wkshps)"
+  year: 2025
+  month: 12 # Globecom is held in December
+  type: conference
+  featured: false
+  image: ""
+  links:
+    pdf: "https://ieeexplore.ieee.org/abstract/document/11591141"
+    doi: "10.1109/GCWkshps68340.2025.11591141"
+    code: ""
+    slides: ""
+    video: ""
+
+
+########### IRS-related #########
+
 - title: "Power Measurement Enabled Channel Autocorrelation Matrix Estimation for IRS-Assisted Wireless Communication"
   authors: "**G. Yan**, L. Zhu, and R. Zhang"
   venue: "IEEE Trans. Wireless Commun."
-  year: 2025
+  year: 2024
+  month: 12 # fill in (1-12)
   type: journal
   featured: false
-  abstract: >-
-    Replace with your actual abstract.
+  image: ""
   links:
-    pdf: ""
-    doi: ""
+    pdf: "https://ieeexplore.ieee.org/abstract/document/10801189"
+    doi: "10.1109/TWC.2024.3512668"
+    code: ""
+    slides: ""
+    video: ""
+
+- title: "Wideband Coverage Enhancement for IRS-Aided Wireless Networks Based on Power Measurement"
+  authors: "**G. Yan**, L. Zhu, H. Sun, and R. Zhang"
+  venue: "IEEE Wireless Commun. Lett."
+  year: 2025
+  month: 11 # fill in (1-12)
+  type: journal
+  featured: false
+  image: ""
+  links:
+    pdf: "https://ieeexplore.ieee.org/abstract/document/11250625"
+    doi: "10.1109/LWC.2025.3633258"
+    code: ""
+    slides: ""
+    video: ""
+
+
+- title: "Passive Reflection Optimization for IRS-Aided Multicast Beamforming with Discrete Phase Shifts"
+  authors: "**G. Yan**, L. Zhu, and R. Zhang"
+  venue: "IEEE Wireless Commun. Lett."
+  year: 2023
+  month: 5 # fill in (1-12)
+  type: journal
+  featured: false
+  image: ""
+  links:
+    pdf: "https://ieeexplore.ieee.org/abstract/document/10128168"
+    doi: "10.1109/LWC.2023.3277136"
+    code: ""
+    slides: ""
+    video: ""
+
+
+- title: "Quasi-Static IRS Reflection Design for Network Coverage Enhancement: A Practical RSRP-Based Approach"
+  authors: "L. Zhu, H. Sun, **G. Yan**, and R. Zhang"
+  venue: "IEEE Wirel. Commun."
+  year: 2026
+  month: 5 # fill in (1-12)
+  type: magazine
+  featured: false
+  image: ""
+  links:
+    pdf: "https://ieeexplore.ieee.org/abstract/document/11534278"
+    doi: "10.1109/MWC.2026.3692436"
+    code: ""
+    slides: ""
+    video: ""
+
+    
+- title: "Channel Autocorrelation Estimation for IRS-Aided Wireless Communications Based on Power Measurements"
+  authors: "**G. Yan**, L. Zhu, and R. Zhang"
+  venue: "2023 IEEE Globecom Workshops (GC Wkshps)"
+  year: 2023
+  month: 12 # Globecom is held in December
+  type: conference
+  featured: false
+  image: ""
+  links:
+    pdf: "https://ieeexplore.ieee.org/abstract/document/10465210"
+    doi: "10.1109/GCWkshps58843.2023.10465210"
     code: ""
     slides: ""
     video: ""

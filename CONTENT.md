@@ -72,10 +72,10 @@ paste it above or below, and change the text.** For example, in
   authors: "**Jane Researcher**, Some Collaborator"
   venue: "Conference on Interesting Systems (CIS)"
   year: 2026
-  type: conference          # journal | conference | workshop | preprint
+  month: 6                   # 1-12, or "" if unknown — used to order papers within the same year
+  type: conference          # journal | magazine | conference
   featured: true             # true = also shows in "Selected Publications" on the home page
-  abstract: >-
-    One or two sentences summarizing the paper.
+  image: "/assets/images/publications/my-paper.png"   # thumbnail shown on the left; "" for none
   links:
     pdf: "https://example.com/paper.pdf"   # leave "" to hide the link
     doi: ""
