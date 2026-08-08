@@ -33,8 +33,12 @@ author:
 # Social / contact links — leave a value blank ("") to hide that link.
 # github/linkedin/scholar/twitter accept either a bare username/ID or a
 # full profile URL (either works — pick whichever is easiest to copy/paste).
+# email is a list — add more lines to show multiple addresses on the home
+# page (each on its own line, under "E-mail(s):").
 social:
-  email: geyan@u.nus.edu
+  email:
+    - geyan@u.nus.edu
+    - ian.geyan.official@gmail.com
   github: ian-geyan
   linkedin: "https://linkedin.com/in/ge-yan-6817801a5"
   scholar: "https://scholar.google.com/citations?user=pKFOqfcAAAAJ&hl=en"

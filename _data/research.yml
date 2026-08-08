@@ -27,7 +27,7 @@
     - "By exploiting the covariance structure of user channels, the framework statistically mitigates inter-user channel correlation through antenna position optimization, improving multiuser communication performance over long timescales. "
   tags: ["Movable Antenna", "Statistical Channel State Information", "Multiuser Communications", "Optimization"]
   featured: false
-  image: "/assets/images/thumb/research-ma-global"
+  image: "/assets/images/thumb/research-ma-global.png"
   papers: ["yan2026-slow-ma-arxiv", "zhu2026-ma-ra-npj", "yan2025-stat-ma-tcomm", "yan2025-stat-ma-gcw25"]
   links:
     repo: ""
@@ -41,7 +41,7 @@
     - "The proposed framework utilizes channel measurements available from existing wireless protocols without requiring additional signaling, facilitating seamless integration of IRSs into existing networks. "
   tags: ["Intelligent Reflecting Surfaces", "Coverage Enhancement", "Channel Estimation", "Optimization"]
   featured: false
-  image: "/assets/images/thumb/research-irs-coverage"
+  image: "/assets/images/thumb/research-irs-coverage.tif" # TODO: convert to .png or .jpg — browsers can't display .tif
   papers: ["sun2026-irs-quasi-static-wcm", "yan2025-irs-coverage-wcl", "yan2025-irs-ce-twc", "yan2023-irs-ce-gcw23", "yan2023-irs-discrete-wcl"]
   links:
     repo: ""

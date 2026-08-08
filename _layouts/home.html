@@ -12,6 +12,15 @@ layout: default
 
     {% include social-links.html %}
 
+    {% if site.social.email.size > 0 %}
+    <div class="sidebar__emails">
+      <span class="sidebar__emails-label">{% if site.social.email.size > 1 %}E-mails:{% else %}E-mail:{% endif %}</span>
+      {% for email in site.social.email %}
+      <a class="sidebar__emails-item" href="mailto:{{ email }}">{{ email }}</a>
+      {% endfor %}
+    </div>
+    {% endif %}
+
     <p class="sidebar__actions">
       <a class="btn btn--primary" href="{{ "/cv/" | relative_url }}">View CV</a>
     </p>

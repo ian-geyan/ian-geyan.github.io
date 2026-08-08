@@ -210,6 +210,17 @@ h1, h2, h3, h4 {
 .social-links a:hover { color: var(--accent); border-color: var(--accent); text-decoration: none; }
 .social-links svg { width: 16px; height: 16px; }
 
+.sidebar__emails {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin: 0 0 18px;
+  font-size: 0.88rem;
+}
+.sidebar__emails-label { font-weight: 600; color: var(--text); }
+.sidebar__emails-item { color: var(--text-muted); }
+.sidebar__emails-item:hover { color: var(--accent); }
+
 .sidebar__actions { margin: 0 0 26px; }
 
 .sidebar__block { width: 100%; margin-top: 6px; }
@@ -234,6 +245,7 @@ h1, h2, h3, h4 {
   }
   .social-links { justify-content: center; }
   .sidebar__block { text-align: left; }
+  .sidebar__emails { align-items: center; }
 }
 
 /* ---------------------------------------------------------------------

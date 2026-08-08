@@ -12,7 +12,7 @@
 <footer class="site-footer">
   <div class="wrap site-footer__inner">
     <div class="site-footer__links">
-      {% if site.social.email %}<a href="mailto:{{ site.social.email }}" aria-label="Email">Email</a>{% endif %}
+      {% for email in site.social.email %}<a href="mailto:{{ email }}" aria-label="Email">Email</a>{% endfor %}
       {% if github_href %}<a href="{{ github_href }}" aria-label="GitHub">GitHub</a>{% endif %}
       {% if linkedin_href %}<a href="{{ linkedin_href }}" aria-label="LinkedIn">LinkedIn</a>{% endif %}
       {% if scholar_href %}<a href="{{ scholar_href }}" aria-label="Google Scholar">Google Scholar</a>{% endif %}

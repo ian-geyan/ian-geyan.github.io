@@ -49,6 +49,7 @@ times as you want without anything changing on the public site.
 | To change...                                | Edit this file            |
 |-----------------------------------------------|----------------------------|
 | Your name, tagline, bio, location, photo, social links (email/GitHub/LinkedIn/Scholar/ORCID/Twitter), research-interest keyword tags | `_config.yml` (top section, under `author:` and `social:`) — for github/linkedin/scholar/twitter you can paste either a bare username/ID or the full profile URL, both work |
+| Email address(es) shown under your avatar on the home page | `_config.yml`, `social.email:` — it's a list, so add more `- your@email.com` lines to show several, each on its own line |
 | A news update on the home page                | `_data/news.yml` |
 | A publication (paper, preprint, talk)          | `_data/publications.yml` |
 | A research project/direction                   | `_data/research.yml` |

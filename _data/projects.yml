@@ -15,7 +15,7 @@
     - "Led algorithm integration, system debugging, and performance evaluation."
   tags: ["Python", "Software-Defined Radio", "Movable Antenna"]
   featured: true
-  image: "/assets/images/thumb/project-ma-prototype"
+  image: "/assets/images/thumb/project-ma-prototype.png"
   papers: ["zhu2026-ma-ra-npj"]
   links:
     repo: ""
@@ -29,7 +29,7 @@
     - "Provided algorithm implementation and technical support, assisted with system debugging, and contributed to performance evaluation and validation."
   tags: ["Python", "MATLAB", "Intelligent Reflecting Surface (IRS)"]
   featured: true
-  image: "/assets/images/thumb/project-irs-prototype"
+  image: "/assets/images/thumb/project-irs-prototype.jpg"
   papers: []
   links:
     repo: ""
