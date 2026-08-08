@@ -7,6 +7,10 @@
       {{ content }}
     </main>
     {% include footer.html %}
+    <div class="lightbox" id="lightbox" hidden>
+      <button class="lightbox__close" id="lightbox-close" aria-label="Close">&times;</button>
+      <img class="lightbox__img" id="lightbox-img" src="" alt="">
+    </div>
     <script src="{{ "/assets/js/main.js" | relative_url }}"></script>
   </body>
 </html>

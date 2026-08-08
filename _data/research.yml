@@ -1,35 +1,42 @@
 # Add one entry per research project/direction. featured: true shows it on the home page.
+# image: path to a thumbnail shown on the left of the entry, e.g.
+#   "/assets/images/research/my-project.png". Leave as "" to show no image —
+#   the entry's text still lines up with entries that do have one.
 
 - title: "Channel Knowledge Map (CKM) Modeling from An Electromagnetic Perspective"
   period: "Apr. 2026 - present"
   description:
-    - "Aims to develop a novel modeling and reconstruction approach for wireless channels based on computational electromagnetics instead of ray-tracing techniques, thereby realizing physically consistent CKM representation without clumsy geometrical parameters for the environment. "
-    - "Envisioned to reduce complexity and dimensionality of CKM modeling, facilitating both wireless communication and sensing for existing systems. "
-  tags: ["Channel Knowledge Map (CKM)", "Digital Twin", "Wireless Sensing", "Inverse Scattering"]
-  featured: true
+    - "Developing an electromagnetic approach to CKM modeling and reconstruction as an alternative to conventional ray-tracing-based approaches, aiming to represent wireless channels in a physically consistent manner without requiring detailed geometric descriptions of the environment. "
+    - "The approach aims to reduce the complexity and dimensionality of CKM modeling, with potential applications in wireless communication and sensing. "
+  tags: ["Channel Knowledge Map (CKM)", "Computational Electromagnetics", "Wireless Sensing", "Inverse Scattering"]
+  featured: false
+  image: ""
   links:
     repo: ""
     demo: ""
     paper: ""
 
-- title: "Movable Antenna (MA)-Aided Wireless Communications Based on Long-Term Channel Statistics"
+- title: "Slow Movable Antenna (MA)-Aided Wireless Communications Based on Long-Term Channel Statistics"
   period: "Apr. 2024 - present"
   description:
-    - "Established a novel optimization framework for MA-aided wireless communication systems based on long-term channel statistics, significantly reducing the overhead and facilitating practical deployment of MA-aided systems."
-    - "By exploiting the covariance structure of user channels, the proposed framework is able to statistically mitigate user channel correlations, thus improving communication performance over different timescales. "
-  tags: ["Movable Antenna", "Statistical Channel State Information", "Multiuser Communications"]
-  featured: true
+    - "Proposed a novel design framework for MA-aided wireless communications based on long-term channel statistics instead of instantaneous channel, reducing the need for frequent channel acquisition and antenna repositioning and thereby facilitating practical deployment."
+    - "By exploiting the covariance structure of user channels, the framework statistically mitigates inter-user channel correlation through antenna position optimization, improving multiuser communication performance over long timescales. "
+  tags: ["Movable Antenna", "Statistical Channel State Information", "Multiuser Communications", "Optimization"]
+  featured: false
+  image: ""
   links:
     repo: ""
     demo: ""
     paper: ""
 
-- title: "Practical Coverage Enhancement for Intelligent Reflecting Surface (IRS)-Assisted Wireless Systems"
+- title: "Practical Configuration for Intelligent Reflecting Surface (IRS)-Assisted Wireless Systems"
   period: "Oct. 2022 - Sep. 2025"
   description:
-    - "Developed efficient and practical channel estimation and optimization algorithms for intelligent reflecting surface (IRS)-assisted wireless systems based on power measurements, enabling smoother integration of IRS and existing wireless systems. "
-  tags: ["Intelligent Reflecting Surfaces", "Coverage Enhancement", "Power Measurement"]
+    - "Developed practical channel acquisition and quasi-static optimization methods for IRS-assisted wireless systems, enabling cost-efficient long-term coverage enhancement. "
+    - "The proposed framework utilizes channel measurements available from existing wireless protocols without requiring additional signaling, facilitating seamless integration of IRSs into existing networks. "
+  tags: ["Intelligent Reflecting Surfaces", "Coverage Enhancement", "Channel Estimation", "Optimization"]
   featured: false
+  image: ""
   links:
     repo: ""
     demo: ""

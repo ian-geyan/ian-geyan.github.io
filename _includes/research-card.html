@@ -1,21 +1,25 @@
-<li class="card research-card">
-  <div class="card__header">
-    <h3 class="card__title">{{ include.research.title }}</h3>
-    <span class="card__period">{{ include.research.period }}</span>
+<li class="entry-row">
+  <div class="entry-row__thumb">{% if include.research.image and include.research.image != "" %}<a href="{{ include.research.image | relative_url }}" class="js-lightbox-trigger"><img src="{{ include.research.image | relative_url }}" alt="" loading="lazy"></a>{% endif %}</div>
+  <div class="entry-row__body">
+    {% assign research_period_lower = include.research.period | downcase %}
+    <div class="card__header">
+      <h3 class="card__title">{% if research_period_lower contains "present" %}<span class="badge-ongoing">[Ongoing]</span> {% endif %}{{ include.research.title }}</h3>
+      <span class="card__period">{{ include.research.period }}</span>
+    </div>
+    {% if include.research.description.size > 0 %}
+    <ul class="card__description-list">
+      {% for point in include.research.description %}<li>{{ point }}</li>{% endfor %}
+    </ul>
+    {% endif %}
+    {% if include.research.tags.size > 0 %}
+    <ul class="tag-list">
+      {% for tag in include.research.tags %}<li class="tag">{{ tag }}</li>{% endfor %}
+    </ul>
+    {% endif %}
+    <p class="card__links">
+      {% if include.research.links.repo and include.research.links.repo != "" %}<a href="{{ include.research.links.repo }}">Repo</a>{% endif %}
+      {% if include.research.links.demo and include.research.links.demo != "" %}<a href="{{ include.research.links.demo }}">Demo</a>{% endif %}
+      {% if include.research.links.paper and include.research.links.paper != "" %}<a href="{{ include.research.links.paper }}">Paper</a>{% endif %}
+    </p>
   </div>
-  {% if include.research.description.size > 0 %}
-  <ul class="card__description-list">
-    {% for point in include.research.description %}<li>{{ point }}</li>{% endfor %}
-  </ul>
-  {% endif %}
-  {% if include.research.tags.size > 0 %}
-  <ul class="tag-list">
-    {% for tag in include.research.tags %}<li class="tag">{{ tag }}</li>{% endfor %}
-  </ul>
-  {% endif %}
-  <p class="card__links">
-    {% if include.research.links.repo and include.research.links.repo != "" %}<a href="{{ include.research.links.repo }}">Repo</a>{% endif %}
-    {% if include.research.links.demo and include.research.links.demo != "" %}<a href="{{ include.research.links.demo }}">Demo</a>{% endif %}
-    {% if include.research.links.paper and include.research.links.paper != "" %}<a href="{{ include.research.links.paper }}">Paper</a>{% endif %}
-  </p>
 </li>

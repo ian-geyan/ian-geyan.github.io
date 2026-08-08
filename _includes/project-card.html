@@ -1,21 +1,25 @@
-<li class="card project-card">
-  <div class="card__header">
-    <h3 class="card__title">{{ include.project.title }}</h3>
-    <span class="card__period">{{ include.project.period }}</span>
+<li class="entry-row">
+  <div class="entry-row__thumb">{% if include.project.image and include.project.image != "" %}<a href="{{ include.project.image | relative_url }}" class="js-lightbox-trigger"><img src="{{ include.project.image | relative_url }}" alt="" loading="lazy"></a>{% endif %}</div>
+  <div class="entry-row__body">
+    {% assign project_period_lower = include.project.period | downcase %}
+    <div class="card__header">
+      <h3 class="card__title">{% if project_period_lower contains "present" %}<span class="badge-ongoing">[Ongoing]</span> {% endif %}{{ include.project.title }}</h3>
+      <span class="card__period">{{ include.project.period }}</span>
+    </div>
+    {% if include.project.description.size > 0 %}
+    <ul class="card__description-list">
+      {% for point in include.project.description %}<li>{{ point }}</li>{% endfor %}
+    </ul>
+    {% endif %}
+    {% if include.project.tags.size > 0 %}
+    <ul class="tag-list">
+      {% for tag in include.project.tags %}<li class="tag">{{ tag }}</li>{% endfor %}
+    </ul>
+    {% endif %}
+    <p class="card__links">
+      {% if include.project.links.repo and include.project.links.repo != "" %}<a href="{{ include.project.links.repo }}">Repo</a>{% endif %}
+      {% if include.project.links.demo and include.project.links.demo != "" %}<a href="{{ include.project.links.demo }}">Demo</a>{% endif %}
+      {% if include.project.links.paper and include.project.links.paper != "" %}<a href="{{ include.project.links.paper }}">Paper</a>{% endif %}
+    </p>
   </div>
-  {% if include.project.description.size > 0 %}
-  <ul class="card__description-list">
-    {% for point in include.project.description %}<li>{{ point }}</li>{% endfor %}
-  </ul>
-  {% endif %}
-  {% if include.project.tags.size > 0 %}
-  <ul class="tag-list">
-    {% for tag in include.project.tags %}<li class="tag">{{ tag }}</li>{% endfor %}
-  </ul>
-  {% endif %}
-  <p class="card__links">
-    {% if include.project.links.repo and include.project.links.repo != "" %}<a href="{{ include.project.links.repo }}">Repo</a>{% endif %}
-    {% if include.project.links.demo and include.project.links.demo != "" %}<a href="{{ include.project.links.demo }}">Demo</a>{% endif %}
-    {% if include.project.links.paper and include.project.links.paper != "" %}<a href="{{ include.project.links.paper }}">Paper</a>{% endif %}
-  </p>
 </li>

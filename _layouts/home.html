@@ -73,7 +73,7 @@ layout: default
         <h2 class="section__title">Featured Research</h2>
         <a class="section__more" href="{{ "/research/" | relative_url }}">All research &rarr;</a>
       </div>
-      <ul class="card-grid">
+      <ul class="entry-list">
         {% for item in featured_research %}
           {% include research-card.html research=item %}
         {% endfor %}

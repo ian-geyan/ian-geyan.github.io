@@ -1,26 +1,31 @@
 # Add one entry per project (software, tools, side projects — things you
 # built, as opposed to /research/ which is your research work/directions).
+# image: path to a thumbnail shown on the left of the entry, e.g.
+#   "/assets/images/projects/my-project.png". Leave as "" to show no image —
+#   the entry's text still lines up with entries that do have one.
 
-- title: "Prototyping for Movable Antenna-Aided Wireless Communications"
+- title: "Movable Antenna (MA)-Aided Wireless Communications Prototype"
   period: "Dec. 2024 - Sep. 2025"
   description:
-    - "Designed and conducted experiments for MA-aided wireless communications and validated theoretical system performance under practical conditions."
+    - "Developed a mechanical antenna positioning and control system and integrated it with National Instruments software-defined radio (SDR) platforms to build a prototype for an MA-aided wireless communication system."
+    - "Designed and conducted experiments to validate the performance of MA-aided wireless communication algorithms under practical system conditions."
     - "Led algorithm integration, system debugging, and performance evaluation."
-    - "Developed a prototype based on National Instrument software-defined radio platforms."
   tags: ["Python", "Software-Defined Radio", "Movable Antenna"]
   featured: true
+  image: ""
   links:
     repo: ""
     demo: ""
     paper: ""
 
-- title: "Practical Channel Acquisition and Optimization for IRS Prototypes"
+- title: "IRS Channel Acquisition and Optimization Prototype"
   period: "May 2024 - Oct. 2024"
   description:
-    - "Collaborated with a remote implementation team to integrate optimization algorithms from my paper into a prototype wireless platform."
-    - "Provided algorithm support, assisted with debugging, and contributed to performance analysis during system validation."
+    - "Collaborated with a remote implementation team to integrate optimization algorithms developed in my research into a prototype wireless platform."
+    - "Provided algorithm implementation and technical support, assisted with system debugging, and contributed to performance evaluation and validation."
   tags: ["Python", "MATLAB", "Intelligent Reflecting Surface (IRS)"]
   featured: true
+  image: ""
   links:
     repo: ""
     demo: ""

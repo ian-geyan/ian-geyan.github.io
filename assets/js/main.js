@@ -43,4 +43,34 @@
       });
     });
   }
+
+  var lightbox = document.getElementById("lightbox");
+  var lightboxImg = document.getElementById("lightbox-img");
+  var lightboxClose = document.getElementById("lightbox-close");
+  if (lightbox && lightboxImg) {
+    var openLightbox = function (trigger) {
+      var img = trigger.querySelector("img");
+      lightboxImg.src = trigger.getAttribute("href");
+      lightboxImg.alt = img ? img.alt : "";
+      lightbox.hidden = false;
+    };
+    var closeLightbox = function () {
+      lightbox.hidden = true;
+      lightboxImg.src = "";
+    };
+    document.querySelectorAll(".js-lightbox-trigger").forEach(function (trigger) {
+      trigger.addEventListener("click", function (e) {
+        e.preventDefault();
+        openLightbox(trigger);
+      });
+    });
+    lightbox.addEventListener("click", closeLightbox);
+    lightboxClose.addEventListener("click", function (e) {
+      e.stopPropagation();
+      closeLightbox();
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && !lightbox.hidden) closeLightbox();
+    });
+  }
 })();
