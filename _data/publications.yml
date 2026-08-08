@@ -4,26 +4,26 @@
 # type: journal | conference | workshop | preprint
 # featured: true shows it in the "Selected Publications" list on the home page
 
-- title: "A Scalable Method for Doing the Thing"
-  authors: "**Jane Researcher**, Alex Collaborator, and Sam Advisor"
-  venue: "Conference on Interesting Systems (CIS)"
+- title: "Slow Movable Antenna System Design Based on Cell-Specific Long-Term Angular Power Spectrum"
+  authors: "**G. Yan**, L. Zhu, and R. Zhang"
+  venue: "arxiv (submitted to IEEE Trans. Wireless Commun.)"
   year: 2026
-  type: conference
+  type: journal
   featured: true
   abstract: >-
     One or two sentences summarizing the contribution and result of this
     paper — replace with your actual abstract.
   links:
-    pdf: ""
+    pdf: "https://arxiv.org/abs/2605.12192"
     doi: ""
-    code: "https://github.com/your-github-username/example-repo"
+    code: ""
     slides: ""
     video: ""
 
-- title: "Understanding Why the Other Thing Happens"
-  authors: "**Jane Researcher** and Sam Advisor"
-  venue: "Journal of Important Findings"
-  year: 2025
+- title: "Movable Antenna Aided Multiuser Communications: Antenna Position Optimization Based on Statistical Channel Information"
+  authors: "**G. Yan**, L. Zhu, and R. Zhang"
+  venue: "IEEE Trans. Commun."
+  year: 2026
   type: journal
   featured: true
   abstract: >-
@@ -35,11 +35,11 @@
     slides: ""
     video: ""
 
-- title: "Early Results on a Promising Direction"
-  authors: "**Jane Researcher**, Alex Collaborator"
-  venue: "Workshop on Emerging Ideas, CIS"
-  year: 2024
-  type: workshop
+- title: "Power Measurement Enabled Channel Autocorrelation Matrix Estimation for IRS-Assisted Wireless Communication"
+  authors: "**G. Yan**, L. Zhu, and R. Zhang"
+  venue: "IEEE Trans. Wireless Commun."
+  year: 2025
+  type: journal
   featured: false
   abstract: >-
     Replace with your actual abstract.

@@ -19,15 +19,15 @@ author:
   avatar: "/assets/images/avatar.jpg" # replace with your own photo
   location: "Singapore"
   bio: >-
-    I work on <strong>[your research area]</strong>. I'm interested in
-    connecting the dots between rigorous research and things that ship.
-    This site collects my publications, projects, and CV.
+    I am a Ph.D. candidate at the National University of Singapore working at the intersection of wireless communications, signal processing, optimization, and computational electromagnetics. My research develops algorithms and mathematical models for wireless communication and sensing systems, with interests spanning reconfigurable MIMO, channel knowledge maps, radio sensing, inverse scattering, and machine learning. 
+  # This site collects my publications, projects, and CV.
   # Shown as tags in the home page sidebar under "Research Interests"
   keywords:
-    - Wireless Communications
-    - Signal Processing
-    - Optimization
-    - Computational Electromagnetics
+    - Movable Antenna
+    - Intelligent Reflecting Surfaces
+    - Channel Knowledge Maps
+    - Radio Sensing
+    - Inverse Scattering
     - Machine Learning
 
 # Social / contact links — leave a value blank ("") to hide that link.
