@@ -10,6 +10,13 @@
 #   assets/images/publications/). Leave as "" to show no image — the
 #   entry's text still lines up with entries that do have one.
 # featured: true shows it in the "Selected Publications" list on the home page
+# label: a short unique id (letters/numbers/hyphens, e.g. "ma-slow-design").
+#   Reference it in a research/project entry's `papers:` list (in
+#   research.yml/projects.yml) to show this paper in that entry's
+#   expandable "Related publications" list.
+# cite: the citation text shown for this paper wherever it's listed under a
+#   research/project entry's "Related publications" list (not shown on
+#   /publications/ itself, which already has its own title/authors/venue).
 
 
 ############ MA-related #########
@@ -20,6 +27,10 @@
   year: 2026
   month: 5 # inferred from arXiv ID 2605.12192 (YYMM) — check/adjust if needed
   type: journal
+  label: "yan2026-slow-ma-arxiv"
+  cite: >-
+    **G. Yan**, L. Zhu, and R. Zhang, "Slow Movable Antenna System Design
+    Based on Cell-Specific Long-Term Angular Power Spectrum," arXiv: 2605.12192, 2026. 
   featured: true
   image: ""
   links:
@@ -35,6 +46,9 @@
   year: 2025
   month: 11 # fill in (1-12)
   type: journal
+  label: "yan2025-stat-ma-tcomm"
+  cite: >-
+    **G. Yan**, L. Zhu, and R. Zhang, "Movable Antenna Aided Multiuser Communications: Antenna Position Optimization Based on Statistical Channel Information," in IEEE Trans. Commun., vol. 74, pp. 1793-1810, 2026.
   featured: true
   image: ""
   links:
@@ -51,6 +65,11 @@
   year: 2026
   month: 2 # fill in (1-12)
   type: journal
+  label: "zhu2026-ma-ra-npj"
+  cite: >-
+    L. Zhu, H. Mao, **G. Yan**, W. Ma, Z. Xiao, and R. Zhang, "Movable and
+    reconfigurable antennas for 6G: Unlocking electromagnetic-domain design
+    and optimization," npj Wireless Technol., vol. 2, no. 1, pp. 1-10, Feb. 2026.
   featured: false
   image: ""
   links:
@@ -66,6 +85,9 @@
   year: 2025
   month: 12 # Globecom is held in December
   type: conference
+  label: "yan2025-stat-ma-gcw25"
+  cite: >-
+    **G. Yan** and R. Zhang, " Antenna Position Optimization Based on Statistical Channel Information for Movable Antenna Aided Multiuser Communications," 2025 IEEE Globecom Workshops (GC Wkshps), Taipei, Taiwan, 2025, pp. 514-519.
   featured: false
   image: ""
   links:
@@ -84,6 +106,11 @@
   year: 2024
   month: 12 # fill in (1-12)
   type: journal
+  label: "yan2025-irs-ce-twc"
+  cite: >-
+    **G. Yan**, L. Zhu, and R. Zhang, "Power Measurement Enabled Channel
+    Autocorrelation Matrix Estimation for IRS-Assisted Wireless
+    Communication," in IEEE Trans. Wireless Commun., vol. 24, no. 3, pp. 1832-1848, Mar. 2025. 
   featured: false
   image: ""
   links:
@@ -99,6 +126,10 @@
   year: 2025
   month: 11 # fill in (1-12)
   type: journal
+  label: "yan2025-irs-coverage-wcl"
+  cite: >-
+    **G. Yan**, L. Zhu, H. Sun, and R. Zhang, "Wideband Coverage Enhancement
+    for IRS-Aided Wireless Networks Based on Power Measurement," in IEEE Wireless Commun. Lett., vol. 15, pp. 670-674, 2026. 
   featured: false
   image: ""
   links:
@@ -115,6 +146,10 @@
   year: 2023
   month: 5 # fill in (1-12)
   type: journal
+  label: "yan2023-irs-discrete-wcl"
+  cite: >-
+    **G. Yan**, L. Zhu, and R. Zhang, "Passive Reflection Optimization for
+    IRS-Aided Multicast Beamforming with Discrete Phase Shifts," in IEEE Wireless Commun. Lett., vol. 12, no. 8, pp. 1424-1428, Aug. 2023. 
   featured: false
   image: ""
   links:
@@ -131,6 +166,11 @@
   year: 2026
   month: 5 # fill in (1-12)
   type: magazine
+  label: "sun2026-irs-quasi-static-wcm"
+  cite: >-
+    L. Zhu, H. Sun, **G. Yan**, and R. Zhang, "Quasi-Static IRS Reflection
+    Design for Network Coverage Enhancement: A Practical RSRP-Based
+    Approach," in IEEE Wirel. Commun., May 2026, early access, DOI: 10.1109/MWC.2026.3692436.
   featured: false
   image: ""
   links:
@@ -147,6 +187,10 @@
   year: 2023
   month: 12 # Globecom is held in December
   type: conference
+  label: "yan2023-irs-ce-gcw23"
+  cite: >-
+    **G. Yan**, L. Zhu, and R. Zhang, "Channel Autocorrelation Estimation
+    for IRS-Aided Wireless Communications Based on Power Measurements," 2023 IEEE Globecom Workshops (GC Wkshps), Kuala Lumpur, Malaysia, 2023, pp. 1457-1462.
   featured: false
   image: ""
   links:

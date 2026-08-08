@@ -2,6 +2,9 @@
 # image: path to a thumbnail shown on the left of the entry, e.g.
 #   "/assets/images/research/my-project.png". Leave as "" to show no image —
 #   the entry's text still lines up with entries that do have one.
+# papers: list of publication `label`s (set in _data/publications.yml) to
+#   show in this entry's expandable "Related publications" list. Leave as
+#   [] for none.
 
 - title: "Channel Knowledge Map (CKM) Modeling from An Electromagnetic Perspective"
   period: "Apr. 2026 - present"
@@ -11,6 +14,7 @@
   tags: ["Channel Knowledge Map (CKM)", "Computational Electromagnetics", "Wireless Sensing", "Inverse Scattering"]
   featured: false
   image: ""
+  papers: []
   links:
     repo: ""
     demo: ""
@@ -23,7 +27,8 @@
     - "By exploiting the covariance structure of user channels, the framework statistically mitigates inter-user channel correlation through antenna position optimization, improving multiuser communication performance over long timescales. "
   tags: ["Movable Antenna", "Statistical Channel State Information", "Multiuser Communications", "Optimization"]
   featured: false
-  image: ""
+  image: "/assets/images/thumb/research-ma-global"
+  papers: ["yan2026-slow-ma-arxiv", "zhu2026-ma-ra-npj", "yan2025-stat-ma-tcomm", "yan2025-stat-ma-gcw25"]
   links:
     repo: ""
     demo: ""
@@ -36,7 +41,8 @@
     - "The proposed framework utilizes channel measurements available from existing wireless protocols without requiring additional signaling, facilitating seamless integration of IRSs into existing networks. "
   tags: ["Intelligent Reflecting Surfaces", "Coverage Enhancement", "Channel Estimation", "Optimization"]
   featured: false
-  image: ""
+  image: "/assets/images/thumb/research-irs-coverage"
+  papers: ["sun2026-irs-quasi-static-wcm", "yan2025-irs-coverage-wcl", "yan2025-irs-ce-twc", "yan2023-irs-ce-gcw23", "yan2023-irs-discrete-wcl"]
   links:
     repo: ""
     demo: ""

@@ -21,5 +21,6 @@
       {% if include.project.links.demo and include.project.links.demo != "" %}<a href="{{ include.project.links.demo }}">Demo</a>{% endif %}
       {% if include.project.links.paper and include.project.links.paper != "" %}<a href="{{ include.project.links.paper }}">Paper</a>{% endif %}
     </p>
+    {% include related-papers.html papers=include.project.papers %}
   </div>
 </li>

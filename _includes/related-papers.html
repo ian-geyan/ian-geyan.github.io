@@ -1,0 +1,15 @@
+{% if include.papers.size > 0 %}
+<details class="related-papers">
+  <summary>Related publications ({{ include.papers.size }})</summary>
+  <ul class="related-papers__list">
+    {% for paper_label in include.papers %}
+      {% assign matched = site.data.publications | where: "label", paper_label | first %}
+      {% if matched %}
+      <li>
+        {% if matched.links.pdf and matched.links.pdf != "" %}<a href="{{ matched.links.pdf }}" target="_blank" rel="noopener">[view]</a> {% endif %}{{ matched.cite | markdownify | replace: '<p>', '' | replace: '</p>', '' }}
+      </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</details>
+{% endif %}

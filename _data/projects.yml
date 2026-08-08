@@ -3,6 +3,9 @@
 # image: path to a thumbnail shown on the left of the entry, e.g.
 #   "/assets/images/projects/my-project.png". Leave as "" to show no image —
 #   the entry's text still lines up with entries that do have one.
+# papers: list of publication `label`s (set in _data/publications.yml) to
+#   show in this entry's expandable "Related publications" list. Leave as
+#   [] for none.
 
 - title: "Movable Antenna (MA)-Aided Wireless Communications Prototype"
   period: "Dec. 2024 - Sep. 2025"
@@ -12,7 +15,8 @@
     - "Led algorithm integration, system debugging, and performance evaluation."
   tags: ["Python", "Software-Defined Radio", "Movable Antenna"]
   featured: true
-  image: ""
+  image: "/assets/images/thumb/project-ma-prototype"
+  papers: ["zhu2026-ma-ra-npj"]
   links:
     repo: ""
     demo: ""
@@ -25,7 +29,8 @@
     - "Provided algorithm implementation and technical support, assisted with system debugging, and contributed to performance evaluation and validation."
   tags: ["Python", "MATLAB", "Intelligent Reflecting Surface (IRS)"]
   featured: true
-  image: ""
+  image: "/assets/images/thumb/project-irs-prototype"
+  papers: []
   links:
     repo: ""
     demo: ""

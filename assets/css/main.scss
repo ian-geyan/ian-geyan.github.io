@@ -312,8 +312,10 @@ h1, h2, h3, h4 {
   gap: 14px;
   padding: 18px 0;
   border-bottom: 1px solid var(--border);
+  scroll-margin-top: 84px; /* clears the sticky header when deep-linked to */
 }
 .pub:last-child { border-bottom: none; }
+.pub:target { background: var(--tag-bg); border-radius: var(--radius); }
 .pub__type {
   flex-shrink: 0;
   width: 90px;
@@ -423,6 +425,28 @@ h1, h2, h3, h4 {
 }
 .card__description-list li { margin: 2px 0; }
 .card__links { display: flex; gap: 12px; font-size: 0.88rem; font-weight: 600; margin: 8px 0 0; }
+
+.related-papers { margin: 10px 0 0; font-size: 0.88rem; }
+.related-papers summary {
+  cursor: pointer;
+  color: var(--text);
+  font-weight: 600;
+}
+.related-papers summary:hover { text-decoration: underline; }
+.related-papers__list {
+  list-style: none;
+  margin: 8px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: var(--text);
+}
+.related-papers__list li {
+  padding: 4px 0 4px 12px;
+  border-left: 2px solid var(--border);
+}
+.related-papers__list a { font-weight: 600; }
 
 /* ---------------------------------------------------------------------
    CV page
