@@ -2,7 +2,7 @@
 # the publications page groups by `year` and ranks newest-to-oldest
 # within each year automatically (using `year` + `month`).
 #
-# type: journal | magazine | conference
+# type: journal | magazine | conference | preprint
 # month: 1-12 (numeric). Leave as "" if unknown — it just sorts to the
 #   start of its year until you fill it in.
 # image: path to a thumbnail shown on the left of the entry, e.g.
@@ -26,7 +26,7 @@
   venue: "arxiv (submitted to IEEE Trans. Wireless Commun.)"
   year: 2026
   month: 5 # inferred from arXiv ID 2605.12192 (YYMM) — check/adjust if needed
-  type: journal
+  type: preprint
   label: "yan2026-slow-ma-arxiv"
   cite: >-
     **G. Yan**, L. Zhu, and R. Zhang, "Slow Movable Antenna System Design
@@ -103,7 +103,7 @@
 - title: "Power Measurement Enabled Channel Autocorrelation Matrix Estimation for IRS-Assisted Wireless Communication"
   authors: "**G. Yan**, L. Zhu, and R. Zhang"
   venue: "IEEE Trans. Wireless Commun."
-  year: 2024
+  year: 2025
   month: 12 # fill in (1-12)
   type: journal
   label: "yan2025-irs-ce-twc"

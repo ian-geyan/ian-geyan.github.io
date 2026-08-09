@@ -10,8 +10,6 @@ layout: default
     <p class="sidebar__role">{{ site.author.role }}</p>
     {% if site.author.location %}<p class="sidebar__location">{{ site.author.location }}</p>{% endif %}
 
-    {% include social-links.html %}
-
     {% if site.social.email.size > 0 %}
     <div class="sidebar__emails">
       <span class="sidebar__emails-label">{% if site.social.email.size > 1 %}E-mails:{% else %}E-mail:{% endif %}</span>
@@ -20,6 +18,8 @@ layout: default
       {% endfor %}
     </div>
     {% endif %}
+
+    {% include social-links.html %}
 
     <p class="sidebar__actions">
       <a class="btn btn--primary" href="{{ "/cv/" | relative_url }}">View CV</a>

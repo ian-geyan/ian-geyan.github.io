@@ -10,8 +10,9 @@
   period: "Apr. 2026 - present"
   description:
     - "Developing an electromagnetic approach to CKM modeling and reconstruction as an alternative to conventional ray-tracing-based approaches, aiming to represent wireless channels in a physically consistent manner without requiring detailed geometric descriptions of the environment. "
+    - "Physics-informed machine learning techniques can be applied for solving the inverse problem, i.e., environment inference given the CKM representation. "
     - "The approach aims to reduce the complexity and dimensionality of CKM modeling, with potential applications in wireless communication and sensing. "
-  tags: ["Channel Knowledge Map (CKM)", "Computational Electromagnetics", "Wireless Sensing", "Inverse Scattering"]
+  tags: ["Channel Knowledge Map (CKM)", "Computational Electromagnetics", "Wireless Sensing", "Inverse Scattering", "machine learning"]
   featured: false
   image: ""
   papers: []
@@ -41,7 +42,7 @@
     - "The proposed framework utilizes channel measurements available from existing wireless protocols without requiring additional signaling, facilitating seamless integration of IRSs into existing networks. "
   tags: ["Intelligent Reflecting Surfaces", "Coverage Enhancement", "Channel Estimation", "Optimization"]
   featured: false
-  image: "/assets/images/thumb/research-irs-coverage.tif" # TODO: convert to .png or .jpg — browsers can't display .tif
+  image: "" # TODO: convert to .png or .jpg — browsers can't display .tif
   papers: ["sun2026-irs-quasi-static-wcm", "yan2025-irs-coverage-wcl", "yan2025-irs-ce-twc", "yan2023-irs-ce-gcw23", "yan2023-irs-discrete-wcl"]
   links:
     repo: ""

@@ -7,13 +7,29 @@
 #   show in this entry's expandable "Related publications" list. Leave as
 #   [] for none.
 
+
+- title: "Channel Knowledge Map (CKM) Representation and Environment Recovery"
+  period: "Jul. 2026 - present"
+  description:
+    - "Conduct experiments to construct a CKM of an indoor laboratory environment and investigate environment recovery from CKM representations using machine learning. "
+    - "Analyze measured channel data from an electromagnetic perspective and validate preliminary theoretical results through experiments."
+  tags: ["Python", "CKM", "Computational Electromagnetics", "Machine Learning"]
+  featured: true
+  image: ""
+  papers: []
+  links:
+    repo: ""
+    demo: ""
+    paper: ""
+
+
 - title: "Movable Antenna (MA)-Aided Wireless Communications Prototype"
   period: "Dec. 2024 - Sep. 2025"
   description:
-    - "Developed a mechanical antenna positioning and control system and integrated it with National Instruments software-defined radio (SDR) platforms to build a prototype for an MA-aided wireless communication system."
+    - "Developed a mechanical antenna positioning and control system and integrated it with National Instruments (NI) software-defined radio (SDR) platforms to build a prototype for an MA-aided wireless communication system."
     - "Designed and conducted experiments to validate the performance of MA-aided wireless communication algorithms under practical system conditions."
     - "Led algorithm integration, system debugging, and performance evaluation."
-  tags: ["Python", "Software-Defined Radio", "Movable Antenna"]
+  tags: ["Python", "NI SDR", "Movable Antenna", "Mechanical Control", "Signal Processing", "Hardware Prototyping"]
   featured: true
   image: "/assets/images/thumb/project-ma-prototype.png"
   papers: ["zhu2026-ma-ra-npj"]
@@ -22,12 +38,13 @@
     demo: ""
     paper: ""
 
-- title: "IRS Channel Acquisition and Optimization Prototype"
+
+- title: "Intelligent Reflecting Surface (IRS) Channel Acquisition and Optimization Prototype"
   period: "May 2024 - Oct. 2024"
   description:
-    - "Collaborated with a remote implementation team to integrate optimization algorithms developed in my research into a prototype wireless platform."
+    - "Collaborated with a remote implementation team to integrate optimization algorithms for IRS-aided wireless communications developed in my research into a prototype wireless platform."
     - "Provided algorithm implementation and technical support, assisted with system debugging, and contributed to performance evaluation and validation."
-  tags: ["Python", "MATLAB", "Intelligent Reflecting Surface (IRS)"]
+  tags: ["Python", "MATLAB", "IRS", "Channel Estimation", "Optimization", "Hardware Prototyping"]
   featured: true
   image: "/assets/images/thumb/project-irs-prototype.jpg"
   papers: []

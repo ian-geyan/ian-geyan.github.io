@@ -78,7 +78,7 @@ paste it above or below, and change the text.** For example, in
   venue: "Conference on Interesting Systems (CIS)"
   year: 2026
   month: 6                   # 1-12, or "" if unknown — used to order papers within the same year
-  type: conference          # journal | magazine | conference
+  type: conference          # journal | magazine | conference | preprint
   label: "my-paper"          # short unique id — reference it from a research/project entry's `papers:` list
   cite: >-
     **Jane Researcher** and Some Collaborator, "My New Paper Title,"
