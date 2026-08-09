@@ -78,6 +78,7 @@ paste it above or below, and change the text.** For example, in
   year: 2026
   month: 6                   # 1-12, or "" if unknown — used to order papers within the same year
   type: conference          # journal | magazine | conference | preprint
+  first_author: true         # true/false — adds a "First-author" filter button on /publications/
   label: "my-paper"          # short unique id — reference it from a research/project entry's `papers:` list
   cite: >-
     **Jane Researcher** and Some Collaborator, "My New Paper Title,"

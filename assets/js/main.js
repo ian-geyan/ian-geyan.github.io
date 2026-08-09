@@ -27,7 +27,14 @@
         btn.classList.add("active");
         var filter = btn.getAttribute("data-pub-filter");
         pubItems.forEach(function (item) {
-          var show = filter === "all" || item.getAttribute("data-pub-type") === filter;
+          var show;
+          if (filter === "all") {
+            show = true;
+          } else if (filter === "first-author") {
+            show = item.getAttribute("data-pub-first-author") === "true";
+          } else {
+            show = item.getAttribute("data-pub-type") === filter;
+          }
           item.style.display = show ? "" : "none";
         });
         document.querySelectorAll("[data-pub-year-heading]").forEach(function (heading) {

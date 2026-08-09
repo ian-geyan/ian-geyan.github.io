@@ -17,6 +17,8 @@
 # cite: the citation text shown for this paper wherever it's listed under a
 #   research/project entry's "Related publications" list (not shown on
 #   /publications/ itself, which already has its own title/authors/venue).
+# first_author: true/false — whether this is your first-author paper. Adds
+#   a "First-author" filter button on /publications/ that shows only these.
 
 
 ############ MA-related #########
@@ -27,6 +29,7 @@
   year: 2026
   month: 5 # inferred from arXiv ID 2605.12192 (YYMM) — check/adjust if needed
   type: preprint
+  first_author: true
   label: "yan2026-slow-ma-arxiv"
   cite: >-
     **G. Yan**, L. Zhu, and R. Zhang, "Slow Movable Antenna System Design
@@ -46,6 +49,7 @@
   year: 2025
   month: 11 # fill in (1-12)
   type: journal
+  first_author: true
   label: "yan2025-stat-ma-tcomm"
   cite: >-
     **G. Yan**, L. Zhu, and R. Zhang, "Movable Antenna Aided Multiuser Communications: Antenna Position Optimization Based on Statistical Channel Information," in IEEE Trans. Commun., vol. 74, pp. 1793-1810, 2026.
@@ -65,6 +69,7 @@
   year: 2026
   month: 2 # fill in (1-12)
   type: journal
+  first_author: false
   label: "zhu2026-ma-ra-npj"
   cite: >-
     L. Zhu, H. Mao, **G. Yan**, W. Ma, Z. Xiao, and R. Zhang, "Movable and
@@ -85,6 +90,7 @@
   year: 2025
   month: 12 # Globecom is held in December
   type: conference
+  first_author: true
   label: "yan2025-stat-ma-gcw25"
   cite: >-
     **G. Yan** and R. Zhang, " Antenna Position Optimization Based on Statistical Channel Information for Movable Antenna Aided Multiuser Communications," 2025 IEEE Globecom Workshops (GC Wkshps), Taipei, Taiwan, Dec. 2025, pp. 514-519.
@@ -106,6 +112,7 @@
   year: 2025
   month: 3 # fill in (1-12)
   type: journal
+  first_author: true
   label: "yan2025-irs-ce-twc"
   cite: >-
     **G. Yan**, L. Zhu, and R. Zhang, "Power Measurement Enabled Channel
@@ -126,6 +133,7 @@
   year: 2025
   month: 11 # fill in (1-12)
   type: journal
+  first_author: true
   label: "yan2025-irs-coverage-wcl"
   cite: >-
     **G. Yan**, L. Zhu, H. Sun, and R. Zhang, "Wideband Coverage Enhancement
@@ -146,6 +154,7 @@
   year: 2023
   month: 5 # fill in (1-12)
   type: journal
+  first_author: true
   label: "yan2023-irs-discrete-wcl"
   cite: >-
     **G. Yan**, L. Zhu, and R. Zhang, "Passive Reflection Optimization for
@@ -161,11 +170,12 @@
 
 
 - title: "Quasi-Static IRS Reflection Design for Network Coverage Enhancement: A Practical RSRP-Based Approach"
-  authors: "L. Zhu, H. Sun, **G. Yan**, and R. Zhang"
+  authors: "H. Sun, L. Zhu, **G. Yan**, and R. Zhang"
   venue: "IEEE Wirel. Commun."
   year: 2026
   month: 5 # fill in (1-12)
   type: magazine
+  first_author: false
   label: "sun2026-irs-quasi-static-wcm"
   cite: >-
     L. Zhu, H. Sun, **G. Yan**, and R. Zhang, "Quasi-Static IRS Reflection
@@ -187,6 +197,7 @@
   year: 2023
   month: 12 # Globecom is held in December
   type: conference
+  first_author: true
   label: "yan2023-irs-ce-gcw23"
   cite: >-
     **G. Yan**, L. Zhu, and R. Zhang, "Channel Autocorrelation Estimation

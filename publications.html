@@ -6,12 +6,16 @@ permalink: /publications/
 ---
 
 {% assign pubs = site.data.publications | sort: "rank" | reverse %}
-{% assign types = pubs | map: "type" | uniq %}
+{% assign type_order = "preprint,journal,magazine,conference" | split: "," %}
 
 <div class="pub-filters">
   <button data-pub-filter="all" class="active">All</button>
-  {% for t in types %}
-  <button data-pub-filter="{{ t }}">{{ t | capitalize }}</button>
+  <button data-pub-filter="first-author">First-author</button>
+  {% for t in type_order %}
+    {% assign matches = pubs | where: "type", t %}
+    {% if matches.size > 0 %}
+    <button data-pub-filter="{{ t }}">{{ t | capitalize }}</button>
+    {% endif %}
   {% endfor %}
 </div>
 
