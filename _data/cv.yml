@@ -2,21 +2,27 @@
 # This is shown alongside (or instead of) a downloadable PDF —
 # put your PDF at assets/files/cv.pdf and it will be linked automatically.
 
+# education[].details: a list of lines, each shown on its own line below
+# the institution (e.g. separate "Advisors: ..." and "Thesis: ..." lines).
 education:
   - degree: "Ph.D. in Electrical and Computer Engineering"
     institution: "National University of Singapore, Singapore"
     period: "Aug. 2022 - Oct. 2026 (expected)"
-    details: "Advisors: Prof. Rui Zhang and Prof. Xudong Chen. \\ Thesis: \"Reconfigurable MIMO for Wireless Communication: Optimization and Practical Channel Knowledge Acquisition.\""
+    details:
+      - "Advisors: Prof. Rui Zhang and Prof. Xudong Chen."
+      - "Thesis: \"Reconfigurable MIMO for Wireless Communication: Optimization and Practical Channel Knowledge Acquisition.\""
 
   - degree: "M.Sc. in Electrical and Computer Engineering"
     institution: "National University of Singapore, Singapore"
     period: "Jan. 2021 - Jun. 2022"
-    details: "GPA: 4.75/5.00. "
+    details:
+      - "GPA: 4.75/5.00."
 
   - degree: "B.Sc. in Information Science and Engineering"
     institution: "Southeast University, Nanjing, China"
     period: "Aug. 2016 - Jun. 2020"
-    details: "Graduated with honors. GPA: 3.89/4.00. "
+    details:
+      - "Graduated with honors. GPA: 3.89/4.00."
 
 
 experience:

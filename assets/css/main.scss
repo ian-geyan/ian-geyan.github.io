@@ -475,6 +475,8 @@ h1, h2, h3, h4 {
 .cv-entry:last-child { border-bottom: none; }
 .cv-entry__main h3 { margin: 0 0 2px; font-size: 1rem; }
 .cv-entry__org { margin: 0 0 4px; color: var(--text-muted); font-size: 0.92rem; }
+.cv-entry__detail-line { margin: 0 0 2px; font-size: 0.92rem; }
+.cv-entry__detail-line:last-child { margin-bottom: 0; }
 .cv-entry__details { margin: 6px 0 0; padding-left: 18px; font-size: 0.92rem; }
 .cv-entry__period {
   flex-shrink: 0;

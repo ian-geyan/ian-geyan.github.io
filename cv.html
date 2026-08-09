@@ -17,7 +17,7 @@ permalink: /cv/
     <div class="cv-entry__main">
       <h3>{{ item.degree }}</h3>
       <p class="cv-entry__org">{{ item.institution }}</p>
-      {% if item.details %}<p>{{ item.details }}</p>{% endif %}
+      {% for line in item.details %}<p class="cv-entry__detail-line">{{ line }}</p>{% endfor %}
     </div>
     <div class="cv-entry__period">{{ item.period }}</div>
   </div>

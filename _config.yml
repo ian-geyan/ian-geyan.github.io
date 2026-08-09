@@ -16,7 +16,7 @@ url: "" # e.g. "https://username.github.io" — set before deploying
 author:
   name: "Ge Yan"
   role: "PhD Candidate, Electrical and Computer Engineering, National University of Singapore"
-  avatar: "/assets/images/avatar.jpg" # replace with your own photo
+  avatar: "/assets/images/avatar.png" # replace with your own photo
   location: "Singapore"
   bio: >-
     I am a Ph.D. candidate at the National University of Singapore working at the intersection of wireless communications, signal processing, optimization, and computational electromagnetics. My research develops algorithms and mathematical models for wireless communication and sensing systems, with interests spanning reconfigurable MIMO, channel knowledge maps, radio sensing, inverse scattering, and machine learning. 
