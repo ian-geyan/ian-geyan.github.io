@@ -59,8 +59,6 @@ nav:
     url: /teaching/
   - title: CV / Resume
     url: /cv/
-  - title: About
-    url: /about/
 
 # How many "selected" items to feature on the home page
 home_publications_count: 3

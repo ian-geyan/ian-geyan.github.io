@@ -56,7 +56,6 @@ times as you want without anything changing on the public site.
 | A software/side project                        | `_data/projects.yml` |
 | A course you taught/TA'd                       | `_data/teaching.yml` |
 | Your education, work experience, skills, awards | `_data/cv.yml` |
-| The "About" page's longer bio text              | `about.markdown` |
 | Your photo                                      | replace `assets/images/avatar.jpg` (upload a file of the same name) |
 | Your CV as a downloadable PDF                   | replace `assets/files/cv.pdf` |
 | The order of tabs in the top nav                | `_config.yml`, the `nav:` list |

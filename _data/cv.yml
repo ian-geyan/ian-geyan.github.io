@@ -6,7 +6,7 @@ education:
   - degree: "Ph.D. in Electrical and Computer Engineering"
     institution: "National University of Singapore, Singapore"
     period: "Aug. 2022 - Oct. 2026 (expected)"
-    details: "Advisors: Prof. Rui Zhang and Prof. Xudong Chen. Thesis: \"Reconfigurable MIMO for Wireless Communication: Optimization and Practical Channel Knowledge Acquisition.\""
+    details: "Advisors: Prof. Rui Zhang and Prof. Xudong Chen. \\ Thesis: \"Reconfigurable MIMO for Wireless Communication: Optimization and Practical Channel Knowledge Acquisition.\""
 
   - degree: "M.Sc. in Electrical and Computer Engineering"
     institution: "National University of Singapore, Singapore"
@@ -33,7 +33,7 @@ skills:
     items: ["MIMO", "Beamforming", "Channel Modeling", "Wireless Sensing", "Signal Processing", "Computational Electromagnetics"]
   - category: "Algorithms"
     items: ["Optimization", "Numerical Methods", "Inverse Problems"]
-  - category: "Machine Learning / AI"
+  - category: "Machine Learning"
     items: ["Deep Learning", "Computer Vision",  "PyTorch", "Tensorflow"]
   - category: "Programming"
     items: ["Python", "MATLAB", "C++"]

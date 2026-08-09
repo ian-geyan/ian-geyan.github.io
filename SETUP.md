@@ -48,8 +48,8 @@ assets/js/main.js      Dark-mode toggle (persisted in localStorage, falls
                        back to OS preference), mobile nav, publication
                        type filter on /publications/.
 
-index.markdown, about.markdown, publications.html, research.html,
-projects.html, teaching.html, cv.html, blog.html, 404.html
+index.markdown, publications.html, research.html, projects.html,
+teaching.html, cv.html, blog.html, 404.html
                        The pages themselves (all layout logic lives in
                        _layouts/_includes; these files are mostly front matter).
 
