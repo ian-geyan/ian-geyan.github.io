@@ -35,12 +35,6 @@ _data/
 _layouts/              default, home, page, post
 _includes/              head, header, footer, social-links, publication-item,
                        research-card, project-card, teaching-item
-_plugins/publication_rank.rb
-                       Computes a year+month sort rank (and month name) for
-                       each publication at build time — Liquid's `sort`
-                       filter only handles one field, so this lets
-                       publications.html/home.html rank newest-to-oldest
-                       within a year using both `year` and `month`.
 
 assets/css/main.scss   Hand-written CSS. Theming via CSS variables in :root
                        and :root[data-theme="dark"] — no framework/CDN.
@@ -103,3 +97,11 @@ _posts/                Blog posts (existing Jekyll convention, unchanged).
   tag balance and logic instead (see conversation history for specifics:
   a duplicate canonical `<link>` and a `defaults:` ordering bug in
   `_config.yml` were caught this way and fixed).
+- Publication sort order (`_data/publications.yml`'s `rank:` field) is a
+  plain static number, not computed by a custom Ruby plugin. An earlier
+  version used a `_plugins/*.rb` Hook, then a Generator, to compute it
+  automatically from `year`/`month` — both silently had no effect on the
+  actual GitHub Actions build (no crash, just never ran), and without
+  Ruby installed locally there was no way to reproduce or debug why. A
+  plain data field sorted with plain Liquid `sort` is more code to keep
+  in sync by hand, but it's guaranteed to work the same way it's tested.

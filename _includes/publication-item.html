@@ -1,3 +1,7 @@
+{% assign month_names = "Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec" | split: "," %}
+{% assign pub_month = include.pub.month | plus: 0 %}
+{% assign pub_month_name = "" %}
+{% if pub_month >= 1 and pub_month <= 12 %}{% assign month_index = pub_month | minus: 1 %}{% assign pub_month_name = month_names[month_index] %}{% endif %}
 <li class="pub"{% if include.pub.label and include.pub.label != "" %} id="{{ include.pub.label }}"{% endif %} data-pub-type="{{ include.pub.type }}" data-pub-year="{{ include.pub.year }}" data-pub-first-author="{{ include.pub.first_author }}">
   <span class="pub__type pub__type--{{ include.pub.type }}">{{ include.pub.type }}</span>
   {% if site.publications_show_images %}
@@ -6,7 +10,7 @@
   <div class="pub__body">
     <h3 class="pub__title">{{ include.pub.title }}</h3>
     <p class="pub__authors">{{ include.pub.authors | markdownify | replace: '<p>', '' | replace: '</p>', '' }}</p>
-    <p class="pub__venue">{{ include.pub.venue }}, {% if include.pub.month_name %}{{ include.pub.month_name }} {% endif %}{{ include.pub.year }}</p>
+    <p class="pub__venue">{{ include.pub.venue }}, {% if pub_month_name != "" %}{{ pub_month_name }} {% endif %}{{ include.pub.year }}</p>
     <p class="pub__links">
       {% if include.pub.links.pdf and include.pub.links.pdf != "" %}<a href="{{ include.pub.links.pdf }}">PDF</a>{% endif %}
       {% if include.pub.links.doi and include.pub.links.doi != "" %}<a href="{{ include.pub.links.doi }}">DOI</a>{% endif %}

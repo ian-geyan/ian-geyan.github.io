@@ -1,10 +1,16 @@
-# Add one entry per publication. Order in this file doesn't matter —
-# the publications page groups by `year` and ranks newest-to-oldest
-# within each year automatically (using `year` + `month`).
+# Add one entry per publication. Order in this file doesn't matter — the
+# publications page groups by `year` and ranks newest-to-oldest within each
+# year using `rank`.
 #
 # type: journal | magazine | conference | preprint
-# month: 1-12 (numeric). Leave as "" if unknown — it just sorts to the
-#   start of its year until you fill it in.
+# month: 1-12 (numeric). Leave as "" if unknown.
+# rank: a plain number that controls sort order (higher = newer, shown
+#   first). Set it to year*10000 + month*100 + a 2-digit tiebreak, e.g. for
+#   May 2026 with tiebreak 99: 2026*10000 + 5*100 + 99 = 20260599. The
+#   tiebreak just needs to make entries in the same month unique — count
+#   down from 99 for entries higher up in this file. This is a plain static
+#   number (not auto-computed) — if you change an entry's year/month
+#   yourself, update its rank to match, or ask Claude to do it.
 # image: path to a thumbnail shown on the left of the entry, e.g.
 #   "/assets/images/publications/my-paper.png" (add the file under
 #   assets/images/publications/). Leave as "" to show no image — the
@@ -28,6 +34,7 @@
   venue: "arxiv (submitted to IEEE Trans. Wireless Commun.)"
   year: 2026
   month: 5 # inferred from arXiv ID 2605.12192 (YYMM) — check/adjust if needed
+  rank: 20260599
   type: preprint
   first_author: true
   label: "yan2026-slow-ma-arxiv"
@@ -48,6 +55,7 @@
   venue: "IEEE Trans. Commun."
   year: 2025
   month: 11 # fill in (1-12)
+  rank: 20251198
   type: journal
   first_author: true
   label: "yan2025-stat-ma-tcomm"
@@ -68,6 +76,7 @@
   venue: "npj Wireless Technol."
   year: 2026
   month: 2 # fill in (1-12)
+  rank: 20260297
   type: journal
   first_author: false
   label: "zhu2026-ma-ra-npj"
@@ -89,6 +98,7 @@
   venue: "2025 IEEE Globecom Workshops (GC Wkshps)"
   year: 2025
   month: 12 # Globecom is held in December
+  rank: 20251296
   type: conference
   first_author: true
   label: "yan2025-stat-ma-gcw25"
@@ -111,6 +121,7 @@
   venue: "IEEE Trans. Wireless Commun."
   year: 2025
   month: 3 # fill in (1-12)
+  rank: 20250395
   type: journal
   first_author: true
   label: "yan2025-irs-ce-twc"
@@ -132,6 +143,7 @@
   venue: "IEEE Wireless Commun. Lett."
   year: 2025
   month: 11 # fill in (1-12)
+  rank: 20251194
   type: journal
   first_author: true
   label: "yan2025-irs-coverage-wcl"
@@ -153,6 +165,7 @@
   venue: "IEEE Wireless Commun. Lett."
   year: 2023
   month: 5 # fill in (1-12)
+  rank: 20230593
   type: journal
   first_author: true
   label: "yan2023-irs-discrete-wcl"
@@ -174,6 +187,7 @@
   venue: "IEEE Wirel. Commun."
   year: 2026
   month: 5 # fill in (1-12)
+  rank: 20260592
   type: magazine
   first_author: false
   label: "sun2026-irs-quasi-static-wcm"
@@ -196,6 +210,7 @@
   venue: "2023 IEEE Globecom Workshops (GC Wkshps)"
   year: 2023
   month: 12 # Globecom is held in December
+  rank: 20231291
   type: conference
   first_author: true
   label: "yan2023-irs-ce-gcw23"

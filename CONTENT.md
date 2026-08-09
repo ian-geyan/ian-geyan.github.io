@@ -63,6 +63,7 @@ times as you want without anything changing on the public site.
 | Which papers show under a research/project entry's expandable "Related publications" list | 1) give the paper a short `label:` (e.g. `"ma-slow-design"`) in `_data/publications.yml`; 2) add that same label to the research/project entry's `papers:` list in `_data/research.yml`/`_data/projects.yml`. A label can be reused in as many entries as you like |
 | The citation text shown for a paper in a "Related publications" list | that paper's `cite:` field in `_data/publications.yml` — free text, e.g. `**G. Yan**, et al., "Title," Venue, 2026.`. A `[view]` link is added automatically in front of it, pointing at that paper's `links.pdf` |
 | Whether publication thumbnails show at all       | `_config.yml`, `publications_show_images: true`/`false` — set to `false` to hide the image column on every publication and go back to the plain text-only list |
+| Sort order of publications (newest first)        | each entry's `rank:` field in `_data/publications.yml` — a plain number, higher = shows first. See the formula in the comment at the top of that file, or just ask Claude Code to add/reorder a publication and it'll set `rank` correctly for you |
 
 ## How the data files work (YAML basics)
 
@@ -76,7 +77,8 @@ paste it above or below, and change the text.** For example, in
   authors: "**Jane Researcher**, Some Collaborator"
   venue: "Conference on Interesting Systems (CIS)"
   year: 2026
-  month: 6                   # 1-12, or "" if unknown — used to order papers within the same year
+  month: 6                   # 1-12, or "" if unknown
+  rank: 20260699              # controls sort order, newest first — see the comment atop this file
   type: conference          # journal | magazine | conference | preprint
   first_author: true         # true/false — adds a "First-author" filter button on /publications/
   label: "my-paper"          # short unique id — reference it from a research/project entry's `papers:` list

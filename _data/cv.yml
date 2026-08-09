@@ -36,15 +36,15 @@ experience:
 
 skills:
   - category: "Wireless"
-    items: ["MIMO", "Beamforming", "Channel Modeling", "Wireless Sensing", "Signal Processing", "Computational Electromagnetics"]
+    items: ["MIMO", "Beamforming", "Channel Modeling", "Wireless Sensing", "Computational Electromagnetics"]
   - category: "Algorithms"
-    items: ["Optimization", "Numerical Methods", "Inverse Problems"]
+    items: ["Optimization", "Numerical Methods", "Signal Processing", "Inverse Problems"]
   - category: "Machine Learning"
     items: ["Deep Learning", "Computer Vision",  "PyTorch", "Tensorflow"]
   - category: "Programming"
     items: ["Python", "MATLAB", "C++"]
   - category: "Tools"
-    items: ["Git", "Docker", "Linux", "COMSOL", "CST", "CVX", "Gurobi"]
+    items: ["COMSOL", "CST", "CVX", "Gurobi", "Git", "Docker", "Linux"]
 
 
 awards:
