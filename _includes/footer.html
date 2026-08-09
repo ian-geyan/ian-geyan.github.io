@@ -1,25 +1,5 @@
-{% assign github_href = site.social.github %}
-{% if github_href and github_href != "" %}{% unless github_href contains "http" %}{% assign github_href = "https://github.com/" | append: github_href %}{% endunless %}{% endif %}
-{% assign linkedin_href = site.social.linkedin %}
-{% if linkedin_href and linkedin_href != "" %}{% unless linkedin_href contains "http" %}{% assign linkedin_href = "https://www.linkedin.com/in/" | append: linkedin_href %}{% endunless %}{% endif %}
-{% assign scholar_href = site.social.scholar %}
-{% if scholar_href and scholar_href != "" %}{% unless scholar_href contains "http" %}{% assign scholar_href = "https://scholar.google.com/citations?user=" | append: scholar_href %}{% endunless %}{% endif %}
-{% assign orcid_href = site.social.orcid %}
-{% if orcid_href and orcid_href != "" %}{% unless orcid_href contains "http" %}{% assign orcid_href = "https://orcid.org/" | append: orcid_href %}{% endunless %}{% endif %}
-{% assign twitter_href = site.social.twitter %}
-{% if twitter_href and twitter_href != "" %}{% unless twitter_href contains "http" %}{% assign twitter_href = "https://twitter.com/" | append: twitter_href %}{% endunless %}{% endif %}
-
 <footer class="site-footer">
   <div class="wrap site-footer__inner">
-    <div class="site-footer__links">
-      {% for email in site.social.email %}<a href="mailto:{{ email }}" aria-label="Email">Email</a>{% endfor %}
-      {% if github_href %}<a href="{{ github_href }}" aria-label="GitHub">GitHub</a>{% endif %}
-      {% if linkedin_href %}<a href="{{ linkedin_href }}" aria-label="LinkedIn">LinkedIn</a>{% endif %}
-      {% if scholar_href %}<a href="{{ scholar_href }}" aria-label="Google Scholar">Google Scholar</a>{% endif %}
-      {% if orcid_href %}<a href="{{ orcid_href }}" aria-label="ORCID">ORCID</a>{% endif %}
-      {% if twitter_href %}<a href="{{ twitter_href }}" aria-label="Twitter">Twitter</a>{% endif %}
-      <a href="{{ "/feed.xml" | relative_url }}" aria-label="RSS feed">RSS</a>
-    </div>
     <p class="site-footer__copy">&copy; {{ site.time | date: "%Y" }} {{ site.title }}. Built with Jekyll.</p>
   </div>
 </footer>
