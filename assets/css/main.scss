@@ -484,8 +484,9 @@ h1, h2, h3, h4 {
   padding-top: 2px;
 }
 .skills-grid { display: grid; gap: 10px; }
-.skills-row { display: flex; gap: 12px; align-items: baseline; flex-wrap: wrap; }
+.skills-row { display: flex; gap: 12px; align-items: baseline; }
 .skills-row__label { font-weight: 600; width: 130px; flex-shrink: 0; font-size: 0.92rem; }
+.skills-row .tag-list { flex: 1; min-width: 0; margin: 0; }
 
 /* ---------------------------------------------------------------------
    Blog / posts

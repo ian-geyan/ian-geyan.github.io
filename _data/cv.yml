@@ -33,8 +33,8 @@ skills:
     items: ["MIMO", "Beamforming", "Channel Modeling", "Wireless Sensing", "Signal Processing", "Computational Electromagnetics"]
   - category: "Algorithms"
     items: ["Optimization", "Numerical Methods", "Inverse Problems"]
-  - category: "ML / Data"
-    items: ["Deep Learning", "PyTorch", "Tensorflow"]
+  - category: "Machine Learning / AI"
+    items: ["Deep Learning", "Computer Vision",  "PyTorch", "Tensorflow"]
   - category: "Programming"
     items: ["Python", "MATLAB", "C++"]
   - category: "Tools"
