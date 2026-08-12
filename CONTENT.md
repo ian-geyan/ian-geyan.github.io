@@ -22,6 +22,11 @@ You don't need to install anything or use git/terminal commands.
 
 That's the whole workflow. No local setup needed.
 
+**Uploading a file (like a CV/resume PDF) instead of editing text**: navigate
+to the `assets/files/` folder on github.com, click **"Add file" → "Upload
+files"**, drag in your PDF (named exactly `cv.pdf` or `resume.pdf` — see the
+table below), then commit the same way as above.
+
 ## If you edited files locally instead (e.g. in VS Code / Claude Code)
 
 Editing a file on your own machine doesn't change the live site by itself —
@@ -57,7 +62,8 @@ times as you want without anything changing on the public site.
 | A course you taught/TA'd                       | `_data/teaching.yml` |
 | Your education, work experience, skills, awards | `_data/cv.yml` |
 | Your photo                                      | replace `assets/images/avatar.jpg` (upload a file of the same name) |
-| Your CV as a downloadable PDF                   | replace `assets/files/cv.pdf` |
+| Your Academic CV as a downloadable PDF          | replace `assets/files/cv.pdf` (must keep that exact filename) |
+| Your Industry Resume as a downloadable PDF      | replace `assets/files/resume.pdf` (must keep that exact filename) |
 | The order of tabs in the top nav                | `_config.yml`, the `nav:` list |
 | A thumbnail image on a publication/research/project entry | that entry's `image:` field — path to an image file, e.g. `/assets/images/research/my-project.png`. Clicking the thumbnail on the live site opens the original image full-size; leave `image: ""` for no thumbnail |
 | Which papers show under a research/project entry's expandable "Related publications" list | 1) give the paper a short `label:` (e.g. `"ma-slow-design"`) in `_data/publications.yml`; 2) add that same label to the research/project entry's `papers:` list in `_data/research.yml`/`_data/projects.yml`. A label can be reused in as many entries as you like |

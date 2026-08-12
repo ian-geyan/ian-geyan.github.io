@@ -69,8 +69,11 @@ _posts/                Blog posts (existing Jekyll convention, unchanged).
    inline comments explaining the fields (e.g. `featured: true` controls
    what shows on the home page).
 4. **Images/files** — add a photo at `assets/images/avatar.jpg` (the home
-   page hides it gracefully if missing) and, optionally, a CV PDF at
-   `assets/files/cv.pdf` (linked from the "Download PDF" button on `/cv/`).
+   page hides it gracefully if missing) and, optionally, two PDFs:
+   `assets/files/cv.pdf` (academic CV) and `assets/files/resume.pdf`
+   (industry resume) — both are linked from buttons on the home page
+   sidebar and at the top of `/cv/`. If a file is missing, its button
+   just leads to a 404 until you add one.
 5. **Preview locally**: `bundle install` then `bundle exec jekyll serve`,
    open `http://localhost:4000`.
    - Note: `Gemfile.lock` is gitignored, not committed. It's
